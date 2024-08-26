@@ -33,7 +33,7 @@ const productId = urlParams.get("id");
 
   // Create the WhatsApp message with encoded values
   const message = `Salut Naturveda, comment allez-vous ? Je suis vraiment intéressé par cet article que j'ai vu sur votre site. 
-  Voici le lien du produit : https://azizdeenx.netlify.app/product-detail.html?id=${productId}
+  Voici le lien du produit : https://naturveda.netlify.app/product-detail.html?id=${productId}
   \n*Nom et Prénoms:* ${Name} 
   \n*Nombre de Produits:* ${quantity} 
   \n*Pays de Destination:* ${country}`;
@@ -42,7 +42,7 @@ const productId = urlParams.get("id");
   const encodedMessage = encodeURIComponent(message);
 
   // Create the WhatsApp link
-  const whatsappLink = `https://wa.me/22997329399?text=${encodedMessage}`;
+  const whatsappLink = `https://wa.me/22997248290?text=${encodedMessage}`;
 
   // Inject the link into the page
   document.getElementById('ToAddToCardx').innerHTML = `
