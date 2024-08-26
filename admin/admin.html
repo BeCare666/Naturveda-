@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="admin.css">
+        <title>Administration</title>
+        <link href="../images/mylogo.png" rel="icon">
+        <link href="../images/mylogo.png" rel="icon">
+
+    </head>
+
+    <body id="idbody">
+        <!-- Dashboard -->
+        <div class="d-flex flex-column flex-lg-row h-lg-full
+            bg-surface-secondary" id="dashbody">
+            <!-- Vertical Navbar -->
+            <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg
+                px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0
+                border-end-lg"
+                id="navbarVertical">
+                <div class="container-fluid">
+                    <!-- Toggler sidebarCollapse-->
+                    <button class="navbar-toggler ms-n2" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#sidebarCollapse"
+                        aria-controls="sidebarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Brand -->
+                    <a class="" href="#">
+                        <img src="../images/mylogo.png" alt="..." style="height: 18vh; width: 100%;">
+                    </a>
+                    <!-- User menu (mobile) -->
+                    <div class="navbar-user d-lg-none">
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <!-- Toggle 
+                        <a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="avatar-parent-child">
+                                <img alt="Image Placeholder"
+                                    src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                                    class="avatar avatar- rounded-circle">
+                                <span class="avatar-child avatar-badge bg-success"></span>
+                            </div>
+                        </a>-->
+                            <!-- Menu -->
+                            <div class="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="sidebarAvatar">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <a href="#" class="dropdown-item">Billing</a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">Se déconnecter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Collapse -->
+                    <!--insert dans le div suivant la classe "collapse" à côtéde la classe "navbar-collapse" -->
+                    <div class=" navbar-collapse" id="sidebarCollapse">
+                        <!-- Navigation -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-house"></i> Dashboard
+                                </a>
+                            </li>
+                             <!-- Messages 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="showMessage">
+                                    <i class="bi bi-chat"></i> Messages
+                                    <span
+                                        class="badge bg-soft-primary
+                                        text-primary rounded-pill d-inline-flex
+                                        align-items-center ms-auto">
+                                        <p id="idtheNumberMessage"></p>
+                                    </span>
+                                </a>
+                            </li>-->
+                        </ul>
+                        <!-- Divider -->
+                        <hr class="navbar-divider my-5 opacity-20">
+                        <!-- Navigation -->
+                        <ul class="navbar-nav mb-md-4"
+                            style="overflow-y: auto;height: 300px; border: 1px
+                            rgb(81, 95, 226) solid; border-radius: 2px 22px 2px
+                            22px;">
+                            <li>
+                                <div class="nav-link text-xs font-semibold
+                                    text-uppercase text-muted ls-wide" href="#"
+                                    style="display: none;">
+                                    Contacts
+                                    <span
+                                        class="badge bg-soft-primary
+                                        text-primary rounded-pill d-inline-flex
+                                        align-items-center ms-4">13</span>
+                                </div>
+                            </li>
+                            <p id="getAllmessageforsite">
+                            <div style = "display: flex; justify-content: center; ">
+                                <img src="../images/about-01.jpg" alt="" style="height: 45.5vh;">
+                            </div>
+                            </p>
+                        </ul>
+                        <!-- Push content down -->
+                        <div class="mt-auto"></div>
+                        <!-- User (md) -->
+                        <!-- import * as alias from 'module';-->
+                        <!-- import * as alias from 'module';-->
+                        <!-- import * as alias from 'module';-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./../index.html">
+                                    <i class="bi bi-person-square"></i>Visiter
+                                    le site
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loginadmin.html"
+                                    id="logoutid">
+                                    <i class="bi bi-box-arrow-left"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Main content -->
+            <div class="h-screen flex-grow-1" id="hooooooo">
+                <style>
+                #hooooooo {
+                    overflow-y: hidden !important;
+                }
+            </style>
+                <!-- Header -->
+                <header class="bg-surface-primary border-bottom pt-6">
+                    <div class="container-fluid">
+                        <div class="mb-npx">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+                                    <!-- Title -->
+                                    <h1 class="h2 mb-0 ls-tight">Administration</h1>
+                                    <div class="col-xl-12 col-sm-12 col-12">
+                                        <div class="card shadow border-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span
+                                                            class="h6
+                                                            font-semibold
+                                                            text-muted text-sm
+                                                            d-block mb-2">Notre
+                                                            Objectif dans 24
+                                                            mois</span>
+                                                        <span class="h3
+                                                            font-bold mb-0">75
+                                                            000 $</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div
+                                                            class="icon
+                                                            icon-shape
+                                                            bg-tertiary
+                                                            text-white text-lg
+                                                            rounded-circle">
+                                                            <i class="bi
+                                                                bi-credit-card"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-2 mb-0 text-sm"
+                                                    style="display: none;">
+                                                    <span class="badge
+                                                        badge-pill
+                                                        bg-soft-success
+                                                        text-success me-2">
+                                                        <i class="bi bi-arrow-up
+                                                            me-1"></i>13%
+                                                    </span>
+                                                    <span class="text-nowrap
+                                                        text-xs text-muted">Since
+                                                        last month</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Actions -->
+                                <div class="col-sm-6 col-12 text-sm-end">
+                                    <div class="mx-n1">
+                                         <!-- Actions 
+                                        <a href="#" class="btn d-inline-flex
+                                            btn-sm btn-neutral border-base
+                                            mx-1">
+                                            <span class=" pe-2">
+                                                <i class="bi bi-pencil"></i>
+                                            </span>
+                                            <span>Mise à jour</span>
+                                        </a>-->
+                                        <a href="#" class="btn d-inline-flex
+                                            btn-sm btn-primary mx-1">
+                                            <span class=" pe-2">
+                                                <i class="bi bi-plus"></i>
+                                            </span>
+                                            <span data-whatever="@mdo"
+                                                id="AceptPlanning">Poster les
+                                                produits</span>
+                                        </a>
+                                        <a href="" style="opacity: 0;">fhkl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal" 
+
+                                tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true" style="background-color: lightcoral !important;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"
+                                                id="exampleModalLabel">produits à
+                                                poster</h5>
+                                            <button type="button" class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">Nom
+                                                        de la produits:</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="recipient-name1">
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">Photo 1 :</label>
+                                                    <input type="file"
+                                                        class="form-control"
+                                                        id="recipient-name2">
+                                                        <!---
+                                                        <label for="recipient-name"
+                                                        class="col-form-label">Photo 2 :</label>
+                                                    <input type="file"
+                                                        class="form-control"
+                                                        id="recipient-name2X">
+
+                                                        <label for="recipient-name"
+                                                        class="col-form-label">Photo 3 :</label>
+                                                    <input type="file"
+                                                        class="form-control"
+                                                        id="recipient-name2X3">
+
+                                                        <label for="recipient-name"
+                                                        class="col-form-label">Photo 4 :</label>
+                                                    <input type="file"
+                                                        class="form-control"
+                                                        id="recipient-name2X4">
+                                                    --->
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">Quantité disponible :</label>
+                                                    <input type="tel"
+                                                        class="form-control"
+                                                        id="recipient-name4">
+
+                                                      <label for="recipient-name"
+                                                        class="col-form-label">Prix Promo</label>
+                                                    <input type="tel"
+                                                        class="form-control"
+                                                        id="recipient-name3">
+
+                                                      <label for="recipient-name"
+                                                      class="col-form-label">Prix Normo</label>
+                                                  <input type="tel"
+                                                      class="form-control"
+                                                      id="recipient-name3Prix">
+
+                                                 <!--     <label for="recipient-name"
+                                                      class="col-form-label">Lien de la produits</label>
+                                                  <input type="tel"
+                                                      class="form-control"
+                                                      id="recipient-name3urlForm">
+
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">La catégorie
+                                                        :</label>
+                                                    <select
+                                                        id="exampleFormControlSelect1"
+                                                        class="form-control"
+                                                        style="height: 50px;">
+                                                       <option selected></option>
+                                                       <option value="produits-E-commerce">produits E-commerce</option>
+                                                       <option value="Master-Rédaction-Web-SEO">Master Rédaction Web SEO</option>
+                                                       <option value="produits-en-IA">produits en IA</option>
+                                                        
+                                                    </select>-->
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Description:</label>
+                                                    <p style="text-align: start !important;" id="TextCounpt"></p>
+                                                    <textarea  class="form-control" id="message-text" style="height: 150px;" oninput="countCharacters()"
+                                                    maxlength="500" minlength="125" required></textarea>
+                                                </div>
+                                            </form>
+                                            
+									
+									
+									
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" id="Selbtn1" data-dismiss="modal">Fermer</button>
+                                            <button type="button" data-dismiss="modal" class="btn btn-primary"  id="Insbtn">Poster la produits</button>
+                                            <button type="button" data-dismiss="modal" class="btn btn-primary" id="Updbtn" style="display: none;">Metrre à jour</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav -->
+                            <ul class="nav nav-tabs mt-4 overflow-x border-0">
+                                <li class="nav-item ">
+                                    <a href="#" class="nav-link active">Tous les
+                                        fichiers</a>
+                                </li>
+                        <!--  <li class="nav-item">
+                        <a href="#" class="nav-link font-regular">Shared</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link font-regular">File requests</a>
+                        </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- Main -->
+                <main class="py-6 bg-surface-secondary">
+                    <div class="container-fluid">
+
+                        <div class="card shadow border-0 mb-7" style="
+                            padding:4px;
+
+                            height: 510px;
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                            text-align:justify;">
+                            <div class="card-header">
+                                <h5 class="mb-0">Toutes nos produits</h5>
+                            </div>
+                            <div class="table-responsive" style="margin-bottom:
+                                30px;">
+                                <table class="table table-hover table-nowrap">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Nom</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Collections</th>
+                                           <th scope="col">Quantité </th>
+                                            <!--- <th scope="col">Prix promo fcfa</th>-->
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Id</th>
+
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="createAllproduct">
+                                    </tbody>
+                                </table>
+                                <div id="createAllproductnodata"></div>
+
+                            </div>
+                            <div class="card-footer border-0 mb-7">
+                                <span class="text-muted text-sm">Votre
+                                    répertoire des produits.</span>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenterAll" tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color: lightcoral !important;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modification
+                            de la produits</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: center;"> Voulez-vous vraiment
+                            mettre à jour cette produits ?</p>
+                    </div>
+                    <div class="modal-footer">
+                       <!-- <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal" id="idseleectBest">Meilleure</button>-->
+
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal" id="idseleectdata">Mettre à  jour</button>
+                        <button type="button" class="btn btn-danger"
+                            id="Delbtn"><i class="bi bi-trash"></i>&nbsp;
+                            Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenterAllMessage" tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span id="idObjetMessage"></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span id="idEmailMessage"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="idMysmsSend"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn
+                            btn-danger" id="DelbtnMymesms"><i
+                                class="bi bi-trash"></i>&nbsp;
+                            Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div id="preloader"></div>-->
+        <script>
+        function countCharacters() {
+        var textarea = document.getElementById("message-text");
+        var TextCounpt = document.getElementById("TextCounpt")
+        var  maxLength = parseInt(textarea.getAttribute("maxlength"));
+        const currentLength = textarea.value.length;
+        const remainingChars = maxLength - currentLength;
+        TextCounpt.textContent = remainingChars + " caractères restants";
+        if (textarea.checkValidity()) {
+        textarea.classList.remove("invalid-input");
+        textarea.classList.add("valid-input");
+        } else {
+        textarea.classList.remove("valid-input");
+        textarea.classList.add("invalid-input");
+        }
+      }
+        </script>
+        <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA1-RiIu5N1z8QonbbbKW2SfPvhnaHFPhs",
+            authDomain: "naturveda-4eed3.firebaseapp.com",
+            databaseURL: "https://naturveda-4eed3-default-rtdb.firebaseio.com",
+            projectId: "naturveda-4eed3",
+            storageBucket: "naturveda-4eed3.appspot.com",
+            messagingSenderId: "745159881296",
+            appId: "1:745159881296:web:8ee95a27ab7c6a1c309755"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+
+        import {
+            getDatabase,
+            ref,
+            set,
+            update,
+            child,
+            onValue,
+            remove,
+            get,
+        } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+        import { getStorage, getDownloadURL 
+        
+        } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js"
+
+        const db = getDatabase(); 
+
+        //--------------referances-----------------//       Prix          
+        var namebox = document.getElementById("recipient-name1");
+        var rollbox = document.getElementById("recipient-name2");
+        var nameboxPromo = document.getElementById("recipient-name3"); 
+        var rollboxPrix = document.getElementById("recipient-name3Prix");
+        var Recipientname3urlForm = document.getElementById("recipient-name3urlForm");
+       // var rollboxX = document.getElementById("recipient-name2X");
+        var genbox = document.getElementById("recipient-name4");
+        var genboxprix = document.getElementById("exampleFormControlSelect1");
+        var genboxprixstart = document.getElementById("exampleFormControlSelect1start");
+        var genboxprixend = document.getElementById("exampleFormControlSelect1end");
+        var genboxtextarea = document.getElementById("message-text");
+        var IdtheNumberMessage = document.getElementById("idtheNumberMessage");
+
+
+        var IdEmailMessage = document.getElementById("idEmailMessage");
+        var IdObjetMessage = document.getElementById("idObjetMessage");
+        var IdMysmsSend = document.getElementById("idMysmsSend");
+
+
+        var insbtn = document.getElementById("Insbtn");
+        var selbtn = document.getElementById("Selbtn");
+        var Idseleectdata = document.getElementById("idseleectdata");
+        var updbtn = document.getElementById("Updbtn");
+        var delbtn = document.getElementById("Delbtn");
+
+        //function to get now date
+
+        var d = new Date();
+        var date = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+        var hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        var fullDate = date + ' ' + hours;
+
+        var tableTakeIdproduct = []
+
+        //--------------function to set image--------//
+
+        var urlImage = []
+        var inputElement = document.getElementById("recipient-name2");
+        // Ajoutez un gestionnaire d'événements pour écouter le changement de fichier
+        inputElement.addEventListener("change", handleFiles, false);
+
+        function handleFiles() {  
+        // Récupérez le fichier sélectionné par l'utilisateur
+        var file = this.files[0];
+        console.log("Fichier sélectionné : ", file);
+
+        // Créez une nouvelle instance de FileReader
+        var reader = new FileReader();
+
+        // Ajoutez un gestionnaire d'événements pour écouter la fin de la lecture du fichier
+        reader.onload = function(event) {
+            // Créez une nouvelle instance d'image
+            var img = new Image();
+
+            // Définissez le gestionnaire d'événements pour lorsque l'image est chargée
+            img.onload = function() {
+            const minWidth = 300; // La largeur minimale souhaitée
+            const minHeight = 300; // La longeur minimale souhaitée
+            if (img.width >= minWidth && img.height >= minHeight) { 
+            // Créez un élément canvas
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            // Déterminez les dimensions de l'image redimensionnée
+            var maxWidth = 800;
+            var maxHeight = 600;
+            var width = img.width;
+            var height = img.height;
+
+            // Vérifiez si l'image doit être redimensionnée
+            if (width > maxWidth || height > maxHeight) {
+                // Calculez le facteur de redimensionnement
+                var ratio = Math.min(maxWidth / width, maxHeight / height);
+
+                // Appliquez le redimensionnement
+                width *= ratio;
+                height *= ratio;
+            }
+
+            // Définissez les dimensions du canvas
+            canvas.width = width;
+            canvas.height = height;
+
+            // Dessinez l'image sur le canvas avec les nouvelles dimensions
+            context.drawImage(img, 0, 0, width, height);
+
+            // Obtenez le contenu de l'image redimensionnée sous forme de base64
+            var base64Content = canvas.toDataURL('image/jpeg');
+            base64Content = base64Content.replace(/^data:image\/jpeg;base64,/, '');
+            console.log("Contenu en base64 : ", base64Content);
+            urlImage.push(base64Content)
+            // ...
+            }else{
+                Swal.showValidationMessage(i18next.t('IDTRANSLATEFORM105'));
+                //alert(`Votre image est trop pétite. Veuillez sélectionner une image d'au moins 300x300 pixels.`)
+                inputElement.value = ""
+            }
+            };
+
+            // Définissez la source de l'image comme le contenu du fichier
+            img.src = event.target.result;
+        };
+
+        // Commencez la lecture du fichier
+        reader.readAsDataURL(file);
+        }
+
+        var urlImageX = []
+       // var inputElement = document.getElementById("recipient-name2X");
+        // Ajoutez un gestionnaire d'événements pour écouter le changement de fichier
+        inputElement.addEventListener("change", handleFilesX, false);
+
+        function handleFilesX() {
+        // Récupérez le fichier sélectionné par l'utilisateur
+        var file = this.files[0];
+        console.log("Fichier sélectionné : ", file);
+
+        // Créez une nouvelle instance de FileReader
+        var reader = new FileReader();
+
+        // Ajoutez un gestionnaire d'événements pour écouter la fin de la lecture du fichier
+        reader.onload = function(event) {
+            // Créez une nouvelle instance d'image
+            var img = new Image();
+
+            // Définissez le gestionnaire d'événements pour lorsque l'image est chargée
+            img.onload = function() {
+            const minWidth = 300; // La largeur minimale souhaitée
+            const minHeight = 300; // La longeur minimale souhaitée
+            if (img.width >= minWidth && img.height >= minHeight) { 
+            // Créez un élément canvas
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            // Déterminez les dimensions de l'image redimensionnée
+            var maxWidth = 800;
+            var maxHeight = 600;
+            var width = img.width;
+            var height = img.height;
+
+            // Vérifiez si l'image doit être redimensionnée
+            if (width > maxWidth || height > maxHeight) {
+                // Calculez le facteur de redimensionnement
+                var ratio = Math.min(maxWidth / width, maxHeight / height);
+
+                // Appliquez le redimensionnement
+                width *= ratio;
+                height *= ratio;
+            }
+
+            // Définissez les dimensions du canvas
+            canvas.width = width;
+            canvas.height = height;
+
+            // Dessinez l'image sur le canvas avec les nouvelles dimensions
+            context.drawImage(img, 0, 0, width, height);
+
+            // Obtenez le contenu de l'image redimensionnée sous forme de base64
+            var base64Content = canvas.toDataURL('image/jpeg');
+            base64Content = base64Content.replace(/^data:image\/jpeg;base64,/, '');
+            console.log("Contenu en base64 : ", base64Content);
+            urlImageX.push(base64Content)
+            // ...
+            }else{
+                Swal.showValidationMessage(i18next.t('IDTRANSLATEFORM105'));
+                //alert(`Votre image est trop pétite. Veuillez sélectionner une image d'au moins 300x300 pixels.`)
+                inputElement.value = ""
+            }
+            };
+
+            // Définissez la source de l'image comme le contenu du fichier
+            img.src = event.target.result;
+        };
+
+        // Commencez la lecture du fichier
+        reader.readAsDataURL(file);
+        }
+
+        var urlImageX3 = []
+        //var inputElement = document.getElementById("recipient-name2X3");
+        // Ajoutez un gestionnaire d'événements pour écouter le changement de fichier
+        inputElement.addEventListener("change", handleFilesX3, false);
+
+        function handleFilesX3() {
+        // Récupérez le fichier sélectionné par l'utilisateur
+        var file = this.files[0];
+        console.log("Fichier sélectionné : ", file);
+
+        // Créez une nouvelle instance de FileReader
+        var reader = new FileReader();
+
+        // Ajoutez un gestionnaire d'événements pour écouter la fin de la lecture du fichier
+        reader.onload = function(event) {
+            // Créez une nouvelle instance d'image
+            var img = new Image();
+
+            // Définissez le gestionnaire d'événements pour lorsque l'image est chargée
+            img.onload = function() {
+            const minWidth = 300; // La largeur minimale souhaitée
+            const minHeight = 300; // La longeur minimale souhaitée
+            if (img.width >= minWidth && img.height >= minHeight) { 
+            // Créez un élément canvas
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            // Déterminez les dimensions de l'image redimensionnée
+            var maxWidth = 800;
+            var maxHeight = 600;
+            var width = img.width;
+            var height = img.height;
+
+            // Vérifiez si l'image doit être redimensionnée
+            if (width > maxWidth || height > maxHeight) {
+                // Calculez le facteur de redimensionnement
+                var ratio = Math.min(maxWidth / width, maxHeight / height);
+
+                // Appliquez le redimensionnement
+                width *= ratio;
+                height *= ratio;
+            }
+
+            // Définissez les dimensions du canvas
+            canvas.width = width;
+            canvas.height = height;
+
+            // Dessinez l'image sur le canvas avec les nouvelles dimensions
+            context.drawImage(img, 0, 0, width, height);
+
+            // Obtenez le contenu de l'image redimensionnée sous forme de base64
+            var base64Content = canvas.toDataURL('image/jpeg');
+            base64Content = base64Content.replace(/^data:image\/jpeg;base64,/, '');
+            console.log("Contenu en base64 : ", base64Content);
+            urlImageX3.push(base64Content)
+            // ...
+            }else{
+                Swal.showValidationMessage(i18next.t('IDTRANSLATEFORM105'));
+                //alert(`Votre image est trop pétite. Veuillez sélectionner une image d'au moins 300x300 pixels.`)
+                inputElement.value = ""
+            }
+            };
+
+            // Définissez la source de l'image comme le contenu du fichier
+            img.src = event.target.result;
+        };
+
+        // Commencez la lecture du fichier
+        reader.readAsDataURL(file);
+        }
+
+
+
+        var urlImageX4 = []
+        //var inputElement = document.getElementById("recipient-name2X4");
+        // Ajoutez un gestionnaire d'événements pour écouter le changement de fichier
+        inputElement.addEventListener("change", handleFilesX4, false);
+
+        function handleFilesX4() {
+        // Récupérez le fichier sélectionné par l'utilisateur
+        var file = this.files[0];
+        console.log("Fichier sélectionné : ", file);
+
+        // Créez une nouvelle instance de FileReader
+        var reader = new FileReader();
+
+        // Ajoutez un gestionnaire d'événements pour écouter la fin de la lecture du fichier
+        reader.onload = function(event) {
+            // Créez une nouvelle instance d'image
+            var img = new Image();
+
+            // Définissez le gestionnaire d'événements pour lorsque l'image est chargée
+            img.onload = function() {
+            const minWidth = 300; // La largeur minimale souhaitée
+            const minHeight = 300; // La longeur minimale souhaitée
+            if (img.width >= minWidth && img.height >= minHeight) { 
+            // Créez un élément canvas
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            // Déterminez les dimensions de l'image redimensionnée
+            var maxWidth = 800;
+            var maxHeight = 600;
+            var width = img.width;
+            var height = img.height;
+
+            // Vérifiez si l'image doit être redimensionnée
+            if (width > maxWidth || height > maxHeight) {
+                // Calculez le facteur de redimensionnement
+                var ratio = Math.min(maxWidth / width, maxHeight / height);
+
+                // Appliquez le redimensionnement
+                width *= ratio;
+                height *= ratio;
+            }
+
+            // Définissez les dimensions du canvas
+            canvas.width = width;
+            canvas.height = height;
+
+            // Dessinez l'image sur le canvas avec les nouvelles dimensions
+            context.drawImage(img, 0, 0, width, height);
+
+            // Obtenez le contenu de l'image redimensionnée sous forme de base64
+            var base64Content = canvas.toDataURL('image/jpeg');
+            base64Content = base64Content.replace(/^data:image\/jpeg;base64,/, '');
+            console.log("Contenu en base64 : ", base64Content);
+            urlImageX4.push(base64Content)
+            // ...
+            }else{
+                Swal.showValidationMessage(i18next.t('IDTRANSLATEFORM105'));
+                //alert(`Votre image est trop pétite. Veuillez sélectionner une image d'au moins 300x300 pixels.`)
+                inputElement.value = ""
+            }
+            };
+
+            // Définissez la source de l'image comme le contenu du fichier
+            img.src = event.target.result;
+        };
+
+        // Commencez la lecture du fichier
+        reader.readAsDataURL(file);
+        }
+
+        function uploadImage() {
+            firebase.initializeApp(firebaseConfig);
+            const ref = firebase.storage().ref();
+            const file = document.querySelector("#recipient-name2").files[0];
+            const name = +new Date() + "-" + file.name;
+            const metadata = {
+                contentType: file.type
+            };
+            const task = ref.child(name).put(file, metadata); task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then(url => {
+            console.log(url);
+            urlImage.push(url)
+            setTimeout(() => {
+            tDatainser()
+            }, 5000)
+            })
+            .catch(console.error);
+        }
+        const errorMsgElement = document.querySelector('span#errorMsg');
+
+        //---------function to insert the product in the site--------//
+
+        //--------------function to generate unique ID
+        var id = () => {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+        const idproduct = id();
+
+        function insertData() {
+         
+        const idproduct = id()
+        set(ref(db, "Thedatas/" + idproduct), {
+        Idproduct: idproduct,
+        NameOfstd: namebox.value,
+        RollNo: urlImage[0],
+       // RollNoX: urlImageX[0],
+       //RollNoX3: urlImageX3[0],
+       // RollNoX4: urlImageX4[0],
+        Prix: genbox.value,
+        PrixPromo: nameboxPromo.value, 
+        PrixNormo: rollboxPrix.value,
+       // URLNormo: Recipientname3urlForm.value,
+        //Category: genboxprix.value,
+        Genboxtextarea: genboxtextarea.value,
+        Datetime: fullDate,
+        addtocard:false
+        })
+        .then(() => {
+        window.location.reload();
+        })
+        .catch((error) => {
+        alert("les données ne sont pas envoyés " + error);
+        });
+        }
+
+        //---------function to open exampleModal modal--------//
+
+
+        document.getElementById("AceptPlanning").addEventListener("click", function () {
+            //  console.log("ok tour le ppofkkfv");
+            $("#exampleModal").modal({
+                show: true,
+                backdrop: "static",
+                keyboard: false,
+            });
+        });
+
+
+
+        //--------------update data-----------------//
+
+        function updatedata() {
+            const last = tableTakeIdproduct.slice(-1).pop();
+            update(ref(db, "Thedatas/" + last), {
+                NameOfstd: namebox.value,             
+                Prix: genbox.value,
+                //Category: genboxprix.value,
+                Genboxtextarea: genboxtextarea.value,
+                PrixPromo: nameboxPromo.value,
+                PrixNormo: rollboxPrix.value,
+               // URLNormo: Recipientname3urlForm.value,
+                Datetime: fullDate
+                
+            })
+            .then(() => {
+            window.location.reload();
+            })
+            .catch((error) => {
+            alert("les données ne sont pas mise à jour " + error);
+            });
+        }
+
+        
+        //function to update the best product
+        
+        {/***       document.getElementById('idseleectBest').addEventListener('click', function(){
+        const last = tableTakeIdproduct.slice(-1).pop();
+        update(ref(db, "Thedatas/" + last), {
+        addtocard: true,             
+        })
+        .then(() => {
+        window.location.reload();
+        })
+        .catch((error) => {
+        alert("les données ne sont pas mise à jour " + error);
+        });
+        })****/}
+
+        //--------------delete data-----------------//
+        function deletedata() {
+            const last = tableTakeIdproduct.slice(-1).pop();
+            remove(ref(db, "Thedatas/" + last))
+                .then(() => {
+                    window.location.reload();
+                })
+                .catch((error) => {
+                    alert("les données ne sont pas supprimées " + error);
+                });
+        }
+
+        //--------------Select data-----------------//
+
+        function seleectData() {
+            $("#exampleModal").modal({
+            show: true,
+            backdrop: "static",
+            keyboard: false,
+            });
+            const last = tableTakeIdproduct.slice(-1).pop();
+            document.getElementById('Insbtn').style.display = 'none'
+            document.getElementById('Updbtn').style.display = 'block'
+            const dbref = ref(db);
+            get(child(dbref, "Thedatas/" + last))
+            .then((snapshot) => {
+            if (snapshot.exists()) {
+            namebox.value = snapshot.val().NameOfstd;
+            genbox.value = snapshot.val().Prix;
+            //genboxprix.value = snapshot.val().Category;
+            genboxtextarea.value = snapshot.val().Genboxtextarea;
+            nameboxPromo.value = snapshot.val().PrixPromo;
+            rollboxPrix.value = snapshot.val().PrixNormo;
+            //Recipientname3urlForm.value = snapshot.val().URLNormo
+            } else {
+            alert("no data");
+            }
+            })
+            .catch((error) => {
+            alert("il y a une ERROR " + error);
+            });
+        }
+
+        // function to get all messages in Real Time 
+        function getAllDataRealtime() {
+            var div = document.getElementById('createAllproduct');
+            var myalldatas = [];
+            const UserConnectIdToBuy = localStorage.getItem("storageName");
+
+            if (!UserConnectIdToBuy) {
+                window.location.href = "loginadmin.html"
+            }
+            const dbref = ref(db, "Thedatas");
+            onValue(dbref, (snopshot) => {
+                snopshot.forEach((childsnopshot) => {
+                    myalldatas.push(childsnopshot.val());
+                    //document.getElementById('preloader').style.display = "none"
+                });
+                if (myalldatas.length != 0) {
+                    return myalldatas.forEach((k) => {
+                    let trow = document.createElement("tr");
+
+                    trow.addEventListener('click', function () {
+                    trow.id = `${k.Idproduct}`
+                    tableTakeIdproduct.push(trow.id)
+                    $("#exampleModalCenterAll").modal({
+                    show: true,
+                    backdrop: "static",
+                    keyboard: false,
+                    });
+                    })
+                    trow.style.cursor = "pointer"
+                    trow.innerHTML =
+                            `
+                    <td>
+                        <img alt="..."
+                            src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                            class="avatar avatar-sm rounded-circle me-" style="display: none;">
+                        <a class="text-heading font-semibold" href="#">
+                            <div style="width: 20vh !important; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${k.NameOfstd}</div> 
+                        </a>
+                    </td>
+                    <td>
+                        ${k.Datetime}
+                    </td>
+                    <td>
+                        <img alt="..."
+                            src="https://preview.webpixels.io/web/img/other/logos/logo-1.png"
+                            class="avatar avatar-xs rounded-circle me-2">
+                        <a class="text-heading font-semibold" href="#">
+                            ${k.Category}
+                        </a>
+                    </td>
+                    <td>
+                        ${k.Prix} 
+                    </td>
+                    <td>
+                        <div style="width: 20vh !important; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${k.Genboxtextarea}</div> 
+                    </td>
+                    <td class="text-end">
+                        <a class=" neutralMyclass">${k.Idproduct} </a>
+                    </td>
+                    <td class="text-end" style="display:none;">
+                        <a class="btn btn-sm btn-neutral neutralMyclass">Mise à jour</a>
+                        <button type="button"
+                            class="btn btn-sm btn-square btn-neutral text-danger-hover">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>                                                          
+            `
+            div.append(trow)
+            })
+            } else {
+                //document.getElementById('preloader').style.display = "none"
+                var CreateAllproductnodata = document.getElementById('createAllproductnodata')
+                    CreateAllproductnodata.innerHTML = ` 
+                     <div style = "display: flex; justify-content: center; margin: auto;">
+                    <img src="../images/no_data.svg" alt="" style = "width: 100%; height: 20vh;">
+                </div> 
+                <p style="text-align: center;">Vous n'avez pas encore de produits.</p>
+             `
+            }
+            });
+            setTimeout(() => {
+                getAllDataRealtimeMessages()
+            }, 2000)
+        }
+
+        window.onload = getAllDataRealtime;
+
+        var tableTakeIdproductM = []
+
+        //------------function to get all message function in Once time------------//
+
+        function getAllDataOnceMessages() {
+            const dbref = ref(db);
+            get(child(dbref, "Messages")).then((snopshot) => {
+                var myalldatasM = [];
+                snopshot.forEach((childsnopshot) => {
+                    myalldatasM.push(childsnopshot.val());
+                    console.log(childsnopshot.val())
+                });
+
+            });
+        }
+        // function to get all message function in Real time
+        function getAllDataRealtimeMessages() {
+            var divMessage = document.getElementById('getAllmessageforsite');
+            var myalldatasM = [];
+            const dbref = ref(db, "Messages");
+            onValue(dbref, (snopshot) => {
+
+                snopshot.forEach((childsnopshot) => {
+                    myalldatasM.push(childsnopshot.val());
+                    //console.log(childsnopshot.val())
+                   // IdtheNumberMessage.innerHTML = `<p>${myalldatasM.length} </p>`
+
+                });
+                if (myalldatasM[0]) {
+                    return myalldatasM.forEach((q) => {
+
+                        let trow = document.createElement("li");
+                        trow.addEventListener('click', function () {
+                            trow.id = `${q.Idproduct}`
+                            tableTakeIdproductM.push(trow.id)
+                            const last1 = tableTakeIdproductM.slice(-1).pop();
+                            const dbref = ref(db);
+                            get(child(dbref, "Messages/" + last1))
+                                .then((snapshot) => {
+                                if (snapshot.exists()) {
+                                IdObjetMessage.innerHTML = ` <h5 class="modal-title" id="exampleModalCenterTitle">Objet : ${snapshot.val().Objet}</h5>`
+                                IdEmailMessage.innerHTML = `<h5 class="modal-title" id="exampleModalCenterTitle">Email : ${snapshot.val().Email}</h5>`
+                                IdMysmsSend.innerHTML = ` <p style="text-align: center;"> ${snapshot.val().Message}</p>`
+                                } else {
+                                alert("no data");
+                                }
+                                })
+                                .catch((error) => {
+                                    alert("il y a une ERROR " + error);
+                                });
+
+                        })
+                        document.getElementById('DelbtnMymesms').addEventListener('click', function () {
+                            const last1 = tableTakeIdproductM.slice(-1).pop();
+                            remove(ref(db, "Messages/" + last1))
+                                .then(() => {
+                                    window.location.reload();
+                                })
+                                .catch((error) => {
+                                    alert("les données ne sont pas supprimées " + error);
+                                });
+                        })
+
+                        trow.innerHTML =
+                            `
+                            <li data-toggle="modal" data-target="#exampleModalCenterAllMessage">
+                            <a href="#" class="nav-link d-flex align-items-center">
+
+                                <div>
+                                    <span class="d-block text-sm font-semibold">
+                                    ${q.Nom}
+                                    </span>
+                                    <span class="d-block text-xs text-muted font-regular">
+                                    ${q.Datetime}
+                                    </span>
+                                </div>
+                                <div class="ms-auto">
+                                    <i class="bi bi-chat"></i>
+                                </div>
+                            </a>
+                            </li>
+                            `
+                        divMessage.append(trow)
+
+                    })
+             } 
+         });
+
+        }
+        //--------------function to  logaout admin-----------------//
+        document.getElementById('logoutid').addEventListener('click', function(){
+        localStorage.removeItem('storageName');
+        })
+        //--------------function to logaout in admin-----------------//
+             
+        //--------------function to connect admin-----------------//
+        //--------------asign btn-----------------//
+        insbtn.addEventListener("click", insertData,);
+        Idseleectdata.addEventListener("click", seleectData);
+        updbtn.addEventListener("click", updatedata);
+        delbtn.addEventListener("click", deletedata);
+
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="database.js"></script>
+        <script src="admin.js"></script>
+    </body>
+
+</html>
