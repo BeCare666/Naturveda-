@@ -3654,4 +3654,5 @@ width: 120px;
 }
 .equal-height .item{
   height: 70vh !important;
+  background-color: #0e2b3b !important;
 }

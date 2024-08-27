@@ -6,7 +6,7 @@
 }
 
 body section {
-    background: rgba(30,30,30) !important;
+    background-color: #223b49 !important; 
 }
 .form{
     display: flex;
@@ -785,3 +785,4 @@ body section {
 	}
 
 }
+
