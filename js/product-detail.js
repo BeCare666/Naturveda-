@@ -69,15 +69,15 @@ if (productData) {
     NewPrice.innerHTML = `${productData.PrixPromo} FCFA` 
     DescriptionProduct.innerHTML = `${productData.Genboxtextarea}`
    // TypeCateId.innerHTML = `${productData.Category}`
-
-
-
    // function to add product
    var jsaddcartdetail = document.getElementById('js-addcart-detailId');
    jsaddcartdetail.innerHTML = `
    <p onclick="addToCart('${productData.Idproduct}', '${productData.NameOfstd}', '${productData.Prix}', '${photoDataUrl}')">Add to card</p>
    `
-
+    // 
+    document.getElementById("openModal").addEventListener('click', function(){
+    window.location.href = `command.html?id=${productId}`
+    })
 
 } else {
   console.log("Aucun produit trouvé avec cet ID.");

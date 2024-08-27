@@ -29,7 +29,7 @@ body section {
 .form .form-box{
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 500px;
     display: flex;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;

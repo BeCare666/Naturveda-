@@ -21,14 +21,14 @@ regLink.addEventListener("click", function(event) {
   
   event.preventDefault();
 });
-
 function submit() {
   // Get values from form inputs
   const Name = document.getElementById('namex').value;
-  const quantity = document.getElementById('quantity').value;
+  const quantity = document.getElementById('quantity').value;  
   const country = document.getElementById('country').value;
+  const quartier = document.getElementById('Quartier').value;
   const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("id");
+  const productId = urlParams.get("id");
   
 
   // Create the WhatsApp message with encoded values
@@ -36,7 +36,8 @@ const productId = urlParams.get("id");
   Voici le lien du produit : https://naturveda.netlify.app/product-detail.html?id=${productId}
   \n*Nom et Prénoms:* ${Name} 
   \n*Nombre de Produits:* ${quantity} 
-  \n*Pays de Destination:* ${country}`;
+  \n*Pays de Destination:* ${country}
+  \n*Quartier de Destination:* ${quartier}`;
   
   // URL encode the entire message
   const encodedMessage = encodeURIComponent(message);
@@ -53,4 +54,3 @@ const productId = urlParams.get("id");
   `;
  document.getElementById('submitButton').style.display = "none"
 };
-

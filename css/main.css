@@ -3400,15 +3400,6 @@ footer .flex-c-m {
 
 
 
-
-
-
-
-
-
-
-
-
 section {
   padding: 60px 0;
   min-height: 100vh;
@@ -3660,4 +3651,7 @@ left: -10px;
 position: absolute;
 top: -10px;
 width: 120px;
+}
+.equal-height .item{
+  height: 70vh !important;
 }

@@ -444,7 +444,7 @@
 						<!--  -->
 						<!-- Button trigger modal -->
 			<div class="image-containerx" >
-				<button type="button" class="btn btn-primary btn-9" data-toggle="modal" data-target="#exampleModalLong">
+				<button type="button" class="btn btn-primary btn-9" id="openModal">
 					<span class="blinkx" style="cursor: pointer;">Commandez ce produit</span>
 				</button>
 			</div><hr>
@@ -1469,76 +1469,6 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
           <div></div>
         </div>
     </section>
-	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" style="background-color: #222;"
-	aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-		<div class="modal-content" style="background-color: #2222229c;">
-			<div class="modal-body">
-				<section class="form">
-					<div class="form-box" id="jh">
-					<div class="form-value">
-						<form class="login-form" id="contactForm" action="javascript:submit()">
-						<h2>Faire la commande</h2>
-						 
-						<div class="input-box">
-							<ion-icon name="lock-closed-outline"></ion-icon>
-							<input type="text" id="namex" name="name" required>
-							<label for="">Votre Nom et Prénoms</label> 
-						</div>
-						<div class="input-box">
-							<ion-icon name="lock-closed-outline"></ion-icon> 
-							<input type="number" id="quantity" name="quantity" required min="1">
-							<label for="">Le nombre de produits</label>
-						</div>
-						<div class="input-box">
-							<ion-icon name="lock-closed-outline" class="ion-iconv"></ion-icon>
-							<select  type="text" id="country" name="country" style="background-color: #2222229c; border: none !important; color: white !important;">
-								<option value="" selected>Pays de destination</option>
-								<option value="Bénin">Bénin</option>
-								<option value="Gabon">Gabon</option>
-								<option value="Cote d'ivoire">Cote d'ivoire</option>
-							</select>
-							 
-						</div>
-						<button id="submitButton" type="submit">Commander</button>
-						<span id="ToAddToCardx"></span>
-						
-
-						<div class="register">
-							<p data-dismiss="modal" aria-label="Close"> Retour</a></p>
-						</div>
-						</form> 
-						<form class="register-form hidden" action="">
-						<h2>Créer un compte</h2>
-						<div class="input-box">
-							<ion-icon name="mail-outline"></ion-icon>
-							<input type="email" name="" id="" required>
-							<label for="">Email</label>
-						</div>
-						<div class="input-box">
-							<ion-icon name="lock-closed-outline"></ion-icon>
-							<input type="password" name="" id="" required>
-							<label for="">Mot de passe</label>
-						</div>
-						<div class="forget">
-							<label for="">
-							<input type="checkbox" name="" id="">Se souvenir de moi
-							<a href="#">Mot de passe oublié</a>
-							</label>
-				
-						</div>
-						<button>Créer</button>
-						<div class="register">
-							<p> Déjà un compte ? <a href="#">Se connecter</a></p>
-						</div>
-						</form>
-					</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		</div>
-	</div>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
