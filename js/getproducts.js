@@ -77,12 +77,12 @@
                                     </a>
 
                                     <span class="stext-105 cl3">
-                                        $${productData.Prix}
+                                        ${productData.PrixPromo } FCFA
                                     </span>
                                 </div>
 
                                 <div class="block2-txt-child2 flex-r p-t-3">
-                                    <a style="cursor:pointer;" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" onclick="addToCart('${productData.Idproduct}', '${productData.NameOfstd}', '${productData.Prix}', '${photoDataUrl}', '${productData.URLNormo}')">
+                                    <a style="cursor:pointer;" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" onclick="addToCart('${productData.Idproduct}', '${productData.NameOfstd}', '${productData.PrixPromo}', '${photoDataUrl}', '${productData.URLNormo}')">
                                     <i class="zmdi zmdi-favorite-outline"  style="font-size: 26px;"></i>
                                         <!-----
                                         <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
@@ -120,12 +120,12 @@
                                     </a>
 
                                     <span class="stext-105 cl3">
-                                        $${productData.Prix}
+                                        ${productData.PrixPromo} FCFA
                                     </span>
                                 </div>
 
                                 <div class="block2-txt-child2 flex-r p-t-3">
-                                    <a style="cursor:pointer;" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" onclick="addToCart('${productData.Idproduct}', '${productData.NameOfstd}', '${productData.Prix}', '${photoDataUrl}', '${productData.URLNormo}')">
+                                    <a style="cursor:pointer;" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2" onclick="addToCart('${productData.Idproduct}', '${productData.NameOfstd}', '${productData.PrixPromo}', '${photoDataUrl}', '${productData.URLNormo}')">
                                     <i class="zmdi zmdi-favorite-outline"  style="font-size: 26px;"></i>
                                         <!-----
                                         <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
@@ -372,7 +372,7 @@
         })
 
         //afficher le total
-        document.getElementById('totalIdCArd').innerHTML = `Total :$ ${sommeDuTableau}`
+        document.getElementById('totalIdCArd').innerHTML = `Total : ${sommeDuTableau} FCFA`
             cartItems.forEach((Q)=>{
                var AddToCard = document.getElementById('addToCard');
                //tableOfPrice.push(Q.price)
