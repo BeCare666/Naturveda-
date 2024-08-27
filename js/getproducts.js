@@ -388,7 +388,7 @@
                        ${Q.name}
                        </a>
                        <span class="header-cart-item-info" style="display: flex !important;">
-                         <p style="margin-right: 35px !important;">$ ${Q.price}</p>
+                         <p style="margin-right: 35px !important;"> ${Q.price} FCFA</p>
                          <p style="cursor: pointer !important; color:red;" onclick="removeProductFromCart('${Q.id}')">Supprimer</p>
                        </span>
                       
