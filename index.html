@@ -36,6 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="css/animad.css">
 <!--===============================================================================================-->
 <style>
 	body section {
@@ -635,7 +636,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-sm-6 col-md-4 p-b-40" data-aos="fade-right">
+				<div class="col-sm-6 col-md-4 p-b-40 zoom-in" data-aos="fade-right">
 					<div class="blog-item">
 						<div class="hov-img0">
 							<a href="#">
@@ -654,7 +655,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 p-b-40" data-aos="fade-left">
+				<div class="col-sm-6 col-md-4 p-b-40 flip-down" data-aos="fade-left">
 					<div class="blog-item">
 						<div class="hov-img0">
 							<a href="#">
@@ -674,7 +675,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 p-b-40" data-aos="zoom-in">
+				<div class="col-sm-6 col-md-4 p-b-40 fade-right" data-aos="zoom-in">
 					<div class="blog-item">
 						<div class="hov-img0">
 							<a href="#">
@@ -731,7 +732,7 @@
 				</div>
 					<div class="row our-offer-items less-carousel">
 						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height" data-aos="flip-down">
+						<div class="col-md-4 col-sm-6 equal-height flip-left" data-aos="flip-down">
 							<div class="item">
 								<img src="images/shilajit-2.jpg" alt="" style="width: 200px; height: 27vh; margin-bottom: 10px;">
 								<h4>Sélection Personnalisée de Produits</h4>
@@ -740,7 +741,7 @@
 						</div>
 						<!-- End Single Item -->
 						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height" data-aos="slide-up">
+						<div class="col-md-4 col-sm-6 equal-height flip-down" data-aos="slide-up">
 							<div class="item">
 								<img src="images/portfolio-4.jpg" alt="" style="width: 200px; height: 25vh; margin-bottom: 10px;">
 								<!--<i class="fas fa-dharmachakra"></i>-->
@@ -753,7 +754,7 @@
 						<!-- End Single Item -->
 	
 						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height" data-aos="fade-left">
+						<div class="col-md-4 col-sm-6 equal-height zoom-in" data-aos="fade-left">
 							<div class="item">
 								<img src="images/shit.jpg" alt="" style="width: 200px; height: 25vh; margin-bottom: 10px;">
 								<!--<i class="fas fa-tasks"></i>-->
@@ -1227,6 +1228,51 @@
 		}
 		onStart()
 	</script>
+		<script>
+
+			window.addEventListener('scroll', function() {
+				const fadeRightElements = document.querySelectorAll('.fade-right');
+			
+				fadeRightElements.forEach(element => {
+					const position = element.getBoundingClientRect().top;
+					const screenPosition = window.innerHeight / 1.3; // Ajuster le moment de l'animation
+			
+					if (position < screenPosition) {
+						element.classList.add('show');
+					}
+				});
+				const zoomInElements = document.querySelectorAll('.zoom-in');
+			
+				zoomInElements.forEach(element => {
+					const position = element.getBoundingClientRect().top;
+					const screenPosition = window.innerHeight / 1.3;
+			
+					if (position < screenPosition) {
+						element.classList.add('show');
+					}
+				});
+				const flipLeftElements = document.querySelectorAll('.flip-left');
+			
+				flipLeftElements.forEach(element => {
+					const position = element.getBoundingClientRect().top;
+					const screenPosition = window.innerHeight / 1.3;
+			
+					if (position < screenPosition) {
+						element.classList.add('show');
+					}
+				});
+				const flipDownElements = document.querySelectorAll('.flip-down');
+			
+			flipDownElements.forEach(element => {
+				const position = element.getBoundingClientRect().top;
+				const screenPosition = window.innerHeight / 1.3;
+			
+				if (position < screenPosition) {
+					element.classList.add('show');
+				}
+			});
+			});
+				</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
