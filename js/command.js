@@ -47,7 +47,7 @@ function submit() {
 
   // Inject the link into the page
   document.getElementById('ToAddToCardx').innerHTML = `
-     <button >  <a href="${whatsappLink}" class="p-view" style="color: black !important;">
+     <button style="background-color: white !important; width: 100%; border-radius: 0 !important;">  <a href="${whatsappLink}" class="p-view" style="color: black !important;">
        Confirmer 
       </a> 
       </button>

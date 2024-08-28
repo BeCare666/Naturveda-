@@ -1,1280 +1,837 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr">
 <head>
-	<title>Home</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/mylogo.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">-->
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/loader.css">
-	<link rel="stylesheet" type="text/css" href="css/animad.css">
-<!--===============================================================================================-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FFF" />
+    <meta name="msapplication-navbutton-color" content="#FFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="csrf-token" content="XpMxA81uUptAJ6B5LC3BvjuSDoM5DXOVfgnsJU5R">
+    <title>Supplément Révolutionnaire BN</title>
+<meta name="description" content="Supplément Révolutionnaire BN">
+<meta property="og:title" content="Supplément Révolutionnaire BN">
+<meta property="og:description" content="Supplément Révolutionnaire BN">
+
+<meta name="twitter:title" content="Supplément Révolutionnaire BN">
+<meta name="twitter:description" content="Supplément Révolutionnaire BN">
+
+<link rel="icon" type="image/png" href="images/mylogo.png"/>
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/command.css">
+
+<link rel="icon" type="image/png" href="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/JFeoybOUhhL0X2PwYPgAdKtsHznYffTyr8ffMefq.png" />
 <style>
-	body section {
-		background-color: #223b49 !important; 
-	}
-	
+  :root {
+                --primary-color: #9B9B9BFF;
+                --light-primary-color: #000000FF;
+                --dark-primary-color: #000000FF;
+                --secondary-color: #000000FF;
+                --body-background-color: #000000FF;
+                --success-color: #00C853;
+                --info-color: #40C4FF;
+                --warning-color: #FFAB00;
+                --danger-color: #F44336;
+        }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... (la suite des caractères)" crossorigin="anonymous">
+    <link href="https://static4.youcan.shop/store-front/css/app.css?id=d37c63466dcf10691f0e134334fce73e" rel="stylesheet">
+    <!-- Custom CSS Code -->
+    <script async>
+        const promise = import('https://openfpcdn.io/fingerprintjs/v4')
+            .then(fp => fp.load())
+
+        promise
+            .then(fp => fp.get())
+            .then(res => {
+              const now = new Date();
+              now.setTime(now.getTime() + 1 * 3600 * 1000);
+
+              const urls = [new URL('https://youcan.shop'), new URL(window.location)]
+              urls.forEach(u => document.cookie = `_ycfp=${res.visitorId}; expires=${now.toUTCString()}; path=/; domain=${u.hostname};`)
+            })
+    </script>
+
+    <meta name="facebook-domain-verification" content="ydq0xbab2xoi52qkmcuus5e2b9htcs" />
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1451515095586969');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1451515095586969&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <script>
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+        n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '977162030329546');
+      fbq('init', '216435090927332');
+      fbq('init', '5413593172076980');
+    fbq('track', 'PageView');
+</script>
+  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <style type="text/css">
+    #PBS-50nwjd1716333261050  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-50nwjd1716333261050  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-50nwjd1716333261050  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-50nwjd1716333261050 {
+    background-color: transparent;
+}
+#PBS-50nwjd1716333261050  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-50nwjd1716333261050 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-50nwjd1716333261050 { }
+  </style>
+  <style type="text/css">
+    #PBS-hn9z4p1716333283357  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-hn9z4p1716333283357  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-hn9z4p1716333283357  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-hn9z4p1716333283357 {
+    background-color: transparent;
+}
+#PBS-hn9z4p1716333283357  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-hn9z4p1716333283357 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-hn9z4p1716333283357 { }
+  </style>
+  <style type="text/css">
+    #PBS-z107371716333296017  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-z107371716333296017  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-z107371716333296017  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-z107371716333296017 {
+    background-color: transparent;
+}
+#PBS-z107371716333296017  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-z107371716333296017 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-z107371716333296017 { }
+  </style>
+  <style type="text/css">
+    #PBS-y7vn1716333369041  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-y7vn1716333369041  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-y7vn1716333369041  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-y7vn1716333369041 {
+    background-color: transparent;
+}
+#PBS-y7vn1716333369041  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-y7vn1716333369041 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-y7vn1716333369041 { }
+  </style>
+  <style type="text/css">
+    #PBS-5tt4qm1716333383225  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-5tt4qm1716333383225  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-5tt4qm1716333383225  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-5tt4qm1716333383225 {
+    background-color: transparent;
+}
+#PBS-5tt4qm1716333383225  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-5tt4qm1716333383225 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-5tt4qm1716333383225 { }
+  </style>
+  <style type="text/css">
+    #PBS-wc4v8n1716333396801  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-wc4v8n1716333396801  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-wc4v8n1716333396801  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-wc4v8n1716333396801 {
+    background-color: transparent;
+}
+#PBS-wc4v8n1716333396801  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-wc4v8n1716333396801 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-wc4v8n1716333396801 { }
+  </style>
+  <style type="text/css">
+    #PBS-8r52i1716333424001  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-8r52i1716333424001  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-8r52i1716333424001  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-8r52i1716333424001 {
+    background-color: transparent;
+}
+#PBS-8r52i1716333424001  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-8r52i1716333424001 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-8r52i1716333424001 { }
+  </style>
+  <style type="text/css">
+    #PBS-c6mqtc1716332527069 .checkout .main{
+    padding: 0;
+}
+#PBS-c6mqtc1716332527069 .checkout-heading{
+    display: none;
+}
+#PBS-c6mqtc1716332527069 #express-checkout-section{
+    padding: 0;
+    margin: 8px 0;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    padding-top: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    padding-right: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    padding-bottom: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    padding-left: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    margin-right: auto;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    margin-left: auto;
+}#PBS-c6mqtc1716332527069 {
+    background: #DBCFBCFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form {
+    width: 100%;
+}
+#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    background: #DBCFBCFF;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    max-width: 600px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    border-width: 4px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    border-style: solid;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    border-color: #DBCFBCFF;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper {
+    border-radius: 6px;
+}@media (max-width: 440px){
+    #PBS-c6mqtc1716332527069 > .inner-express-checkout-form > .page-builder-express-checkout-wrapper{
+        width: 100% !important;
+    }
+}#PBS-c6mqtc1716332527069 .radio-buttons-container, .image-based-buttons-container, .color-based-buttons-container, .textual-buttons-container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}#PBS-c6mqtc1716332527069 .radio-buttons-container, .image-based-buttons-container, .color-based-buttons-container, .textual-buttons-container{
+    flex-direction: column;
+}#PBS-c6mqtc1716332527069 .radio-buttons-container .radio-button-variant, .image-based-buttons-container .image-based-buttons, .color-based-buttons-container .color-based-buttons, .textual-buttons-container .textual-button{
+    margin: 0 !important;
+}#PBS-c6mqtc1716332527069 .single-variant{
+  text-align: left;
+}#PBS-c6mqtc1716332527069 .single-variant .radio-buttons-container, .image-based-buttons-container, .color-based-buttons-container, .textual-buttons-container{
+  width: max-content;
+  align-items: unset !important;
+}#PBS-c6mqtc1716332527069 .single-variant .radio-buttons-container, .image-based-buttons-container, .color-based-buttons-container, .textual-buttons-container{
+  margin: 0 auto 0 0 !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select{
+    font-size: 14px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    color: #000000FF !important;
+}#PBS-c6mqtc1716332527069 .form-group .form-label {
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    padding-top: 10px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    padding-right: 14px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    padding-bottom: 10px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    padding-left: 14px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    background: #9B9B9BFF !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    border-color: #000000FF !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    border-width: 1px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    border-radius: 6px !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    border-style: solid !important;
+}#PBS-c6mqtc1716332527069 .form-group input, textarea, select {
+    transition: all .25s;
+}#PBS-c6mqtc1716332527069 .form-group input::placeholder, textarea::placeholder, select::placeholder{
+    color: #000000FF;
+    opacity: 1;
+}#PBS-c6mqtc1716332527069 .form-group input:focus, textarea:focus, select:focus{
+    color: #000000FF !important;
+}#PBS-c6mqtc1716332527069 .form-group input:focus, textarea:focus, select:focus{
+    background: #9B9B9BFF !important;
+}#PBS-c6mqtc1716332527069 .form-group input:focus, textarea:focus, select:focus{
+    border-color: #000000FF !important;
+}#PBS-c6mqtc1716332527069 .form-group input:focus, textarea:focus, select:focus{
+    border-width: 1px !important;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    font-size: 14px;
+    height: auto !important;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    color: #FFFFFFFF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    padding: 14px 24px;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    background: #000000FF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    border-color: #FFFFFFFF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    border-width: 0px;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    border-style: solid;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit{
+    border-radius: 6px;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit:hover,.single-submit:focus{
+    color: #FFFFFFFF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit:hover,.single-submit:focus{
+    background: #000000FF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit:hover,.single-submit:focus{
+    border-color: #FFFFFFFF;
+}#PBS-c6mqtc1716332527069 .add-to-cart-section .single-submit:hover,.single-submit:focus{
+    border-width: 0px;
+}#PBS-c6mqtc1716332527069 .product-price-container {
+    margin: 10px auto 10px auto;
+}#PBS-c6mqtc1716332527069 .product-price-container .product-price {
+    font-size: 4rem;
+    color: #26292E;
+    
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 0px #000000;
+}
+#PBS-c6mqtc1716332527069 .product-price-container .product-price .currency {
+    font-size: 2rem;
+}#PBS-c6mqtc1716332527069 .product-price-container .product-compare-at-price {
+    font-size: 1rem;
+    color: #747474;
+    
+    font-weight: normal;
+    text-decoration: line-through;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 0px #000000;
+}
+#PBS-c6mqtc1716332527069 .product-price-container .product-price .currency {
+    font-size: 2rem;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form{
+    margin-top: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form{
+    margin-right: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form{
+    margin-bottom: 0px;
+}#PBS-c6mqtc1716332527069 > .inner-express-checkout-form{
+    margin-left: 0px;
+}#PBS-c6mqtc1716332527069 { }
+  </style>
+  <style type="text/css">
+    #PBS-3uqv31716333444940  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-3uqv31716333444940  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-3uqv31716333444940  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   
+}
+#PBS-3uqv31716333444940 {
+    background-color: transparent;
+}
+#PBS-3uqv31716333444940  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-3uqv31716333444940 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-3uqv31716333444940 { }
+  </style>
+  <style type="text/css">
+    #PBS-ov952q1716333455739  > .inner-container > .inner-image-section[href=''] {
+    cursor: default;
+    user-select: none;
+}
+#PBS-ov952q1716333455739  > .inner-container > .inner-image-section[href='']:active {
+    pointer-events: none;
+}
+#PBS-ov952q1716333455739  > .inner-container > .inner-image-section {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    
+}
+#PBS-ov952q1716333455739 {
+    background-color: transparent;
+}
+#PBS-ov952q1716333455739  > .inner-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+#PBS-ov952q1716333455739 img {
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}#PBS-ov952q1716333455739 { }
+  </style>
 </head>
-<body class="animsition">
-	
-	<!-- Header -->
-	<header>
-		<!-- Header desktop -->
-		<div class="container-menu-desktop" >
-			<!-- Topbar -->
-			<div class="top-bar">
-				<div class="content-topbar flex-sb-m h-full container">
-					<div class="left-top-bar">
-						Free shipping for standard order over $100
-					</div>
-
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Help & FAQs
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							My Account
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="wrap-menu-desktop">
-				<nav class="limiter-menu-desktop container">
-					
-					<!-- Logo desktop -->		
-					<a href="#" class="logo">
-						<img src="images/mylogo.png" alt="IMG-LOGO"
-						style="width: 100%; height: 9vh; border-radius: 5px;"
-						>
-					</a>
-
-					<!-- Menu desktop -->
-					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li class="active-menu">
-								<a href="index.html">Accueil</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
-								</ul>
-							</li>
-
-							<li>
-								<a href="product.html">Les produits</a>
-							</li>
-
-							<li>
-								<a href="about.html">À propos</a>
-							</li>
-							<!----
-							<li>
-								<a href="faq.html">F.A.Q</a>
-							</li>
-							<li>
-								<a href="politique.html" class="cacheIdClass">Politique</a>
-							</li>
-							<li>
-								<a href="termes.html" class="cacheIdClass">Termes</a>
-							</li>
-						    -->
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
-						</ul>
-					</div>	
-
-
-					<!-- Icon header -->
-					<div class="wrap-icon-header flex-w flex-r-m">
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-							<i class="zmdi zmdi-search"></i>
-						</div>
-
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" id="monDivww">
-							<i class="zmdi zmdi-favorite-outline"></i>
-						</div>
-
-						<a href="#" class="dis-block dis-blockx icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-							<i class="zmdi zmdi-favorite-outline"></i>
-						</a>
-					</div>
-				</nav>
-			</div>	
-		</div>
-
-		<!-- Header Mobile -->
-		<div class="wrap-header-mobile">
-			<!-- Logo moblie -->		
-			<div class="logo-mobile">
-				<a href="index.html">
-					<img src="images/mylogo.png" alt="IMG-LOGO"
-					style="width: 10vh; height: 9vh; border-radius: 5px;"
-					>
-				</a>
-			</div>
-
-			<!-- Icon header -->
-			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
-				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-					<i class="zmdi zmdi-search"></i>
-				</div>
-
-				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" id="monDivw">
-					<i class="zmdi zmdi-favorite-outline"></i>
-				</div>
-
-				<a href="#" class="dis-block dis-blockx icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
-					<i class="zmdi zmdi-favorite-outline"></i>
-				</a>
-			</div>
-
-			<!-- Button show menu -->
-			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</div>
-		</div>
-
-
-		<!-- Menu Mobile -->
-		<div class="menu-mobile">
-			<ul class="topbar-mobile">
-				<li>
-					<div class="left-top-bar">
-						Free shipping for standard order over $100
-					</div>
-				</li>
-
-				<li>
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
-						</a>
-					</div>
-				</li>
-			</ul>
-
-			<ul class="main-menu-m">
-				<li>
-					<a href="index.html">Home</a>
-					<ul class="sub-menu-m">
-						<li><a href="index.html">Homepage 1</a></li>
-						<li><a href="home-02.html">Homepage 2</a></li>
-						<li><a href="home-03.html">Homepage 3</a></li>
-					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</li>
-
-				<li>
-					<a href="product.html">Les produits</a>
-				</li>
-
-				<li>
-					<a href="about.html">À propos</a>
-				</li>
-				<!----
-				<li>
-					<a href="faq.html">F.A.Q</a>
-				</li>
-				<li>
-					<a href="politique.html" class="cacheIdClass">Politique</a>
-				</li>
-
-				<li>
-					<a href="termes.html" class="cacheIdClass">Termes</a>
-				</li>
-			    -->
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-			</ul>
-		</div>
-
-		<!-- Modal Search -->
-		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-			<div class="container-search-header">
-				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-					<img src="images/icons/icon-close2.png" alt="CLOSE">
-				</button>
-
-				<form class="wrap-search-header flex-w p-l-15">
-					<button class="flex-c-m trans-04">
-						<i class="zmdi zmdi-search"></i>
-					</button>
-					<input class="plh3" type="text" name="search" placeholder="Search...">
-				</form>
-			</div>
-		</div>
-	</header>
-
-	<!-- Cart
-	<div class="wrap-header-cart js-panel-cart">
-		<div class="s-full js-hide-cart"></div>
-
-		<div class="header-cart flex-col-l p-l-65 p-r-25">
-			<div class="header-cart-title flex-w flex-sb-m p-b-8">
-				<span class="mtext-103 cl2">
-					Your Cart
-				</span>
-
-				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-					<i class="zmdi zmdi-close"></i>
-				</div>
-			</div>
-			
-			<div class="header-cart-content flex-w js-pscroll">
-				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $19.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-02.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $39.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-03.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $17.00
-							</span>
-						</div>
-					</li>
-				</ul>
-				
-				<div class="w-full">
-					<div class="header-cart-total w-full p-tb-40">
-						Total: $75.00
-					</div>
-
-					<div class="header-cart-buttons flex-w w-full">
-						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							View Cart
-						</a>
-
-						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Check Out
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    -->
-		
-
-	<!-- Slider -->
-	 
-	<section class="section-slide" id="hearderId" style=" background-image: url(images/portfolio-5.jpg);">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1" > 
-					<div class="container h-full">  						 
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5" >
-							<div style="background-color: #2222223d !important; padding: 10px;">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1" style="color: white; ">
-									Soyez la bienvenue !
-								</h2>
-							</div>
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2" style="color: white; ">
-								<em style="color: white; ">"Naturveda",</em> c'est atteindre un état de bien-être optimal grâce à des solutions naturelles
-								</span>
-							</div>
-							</div><hr>
-						
-								
-							<div class="layer-slick1 animated vi  sible-false" data-appear="zoomIn" data-delay="1600">
-								<a href="product.html" style="background-color: rgb(4, 0, 255) !important; color: white;" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Visiter nos produits
-								</a>
-							</div>
-						</div>
-						<div style="margin-top: 15vh !important; display: none;">
-							<img src="images/materiels-high-tech.jpg" alt="" style="width: 130vh; height: 70vh;">
-						</div>
-					</div>
-				</div>
- 
-			</div>
-		</div> 
-	</section>
-	<!-- Banner -->
-	<div class="sec-banner bg0 p-t-80 p-b-50" style="display: none;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto" >
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="images/materiels-high-tech.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Électronique" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Électronique
-
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://www.pharmaciedumee.com/wp-content/uploads/sites/2/2020/04/soins-visage-corps-cheveux.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Hygiène-Santé" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Hygiène & Santé
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://www.leparisien.fr/resizer/16ONPr83M3NEutr7xOmyfkcDOAs=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/lpguideshopping/YLBCOQERJY3GKJ3TQVYUCIVPOA.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Sports" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Sports
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									New Trend
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://www.burolia.fr/images/products/bureaux-etner-36615z.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Fournitures-de-Bureaux-Cuisine-et-Maison" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Fournitures de Bureaux, Cuisine et Maison
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://static.sonovente.com/img/library/alpha/77/77592.png" alt="IMG-BANNER">
-
-						<a href="product.html?category=Instrument-de-Musique" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Instrument de Musique
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhDscF4tQfpzh34AMxPiSnybjXL48K4qzIw&usqp=CAU" alt="IMG-BANNER">
-
-						<a href="product.html?category=High-Tech" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									High-Tech
-
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									New Trend
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://www.nectardunet.com/wp-content/uploads/2022/01/8217c5ba036eb8ad7c69f358e61350b7-640x447.jpe" alt="IMG-BANNER">
-
-						<a href="product.html?category=Jeux-et-Jouets" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Jeux et Jouets
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="https://www.keria.com/media/wysiwyg/CMS/Keria/25/K_170801_types-eclairages_GUIDE.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Luminaire-et-Éclairage" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Luminaire et Éclairage
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									Printemps 2023
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="images/banner-02.jpg" alt="IMG-BANNER">
-
-						<a href="product.html?category=Mode" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-							<div class="block1-txt-child1 flex-col-l">
-								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Mode
-								</span>
-
-								<span class="block1-info stext-102 trans-04">
-									New Trend
-								</span>
-							</div>
-
-							<div class="block1-txt-child2 p-b-4 trans-05">
-								<div class="block1-link stext-101 cl0 trans-09">
-									Acheter maintenant
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Blog -->
-	<section class="sec-blog bg0 p-t-60 p-b-90">
-		<div class="container">
-			<div class="p-b-16">
-				<div class="site-heading text-center">
-					<h2>Nos <span>produits</span></h2>
-					<h4 style="color: white !important;">Produits proposés par Naturveda</h4>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-6 col-md-4 p-b-40 zoom-in" data-aos="fade-right">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="#">
-								<img src="images/1688_image_share_5912d159b5a1399595fdb8cf57de78f0.jpg" alt="IMG-BLOG">
-							</a>
-						</div>
-
-						<div class="p-t-15">
-							<p class="stext-108 cl6">
-								Ces produits Naturveda sont conçu pour offrir des résultats visibles et durables. 
-								Qu'il s'agisse de soins pour la peau, de suppléments ou d'huiles essentielles.
-								Nos produits sont cliniquement testés et approuvés par des experts pour garantir leur efficacité.
-								<a href="product.html">En savoir plus</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-b-40 flip-down" data-aos="fade-left">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="#">
-								<img src="images/1724711625533-610951234.jpg" alt="IMG-BLOG">
-							</a>
-						</div>
-
-						<div class="p-t-15">
-							
-							<p class="stext-108 cl6">
-								Les produits Naturveda sont conçus pour être doux et adaptés à tous les types de peaux, même les plus sensibles. 
-								Grâce à l'absence de produits chimiques et d'additifs artificiels, ils nourrissent en profondeur 
-								tout en respectant l'équilibre naturel de votre peau.
-								<a href="product.html">En savoir plus</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-b-40 fade-right" data-aos="zoom-in">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="#">
-								<img src="images/1724711690442--976614965.jpg" alt="IMG-BLOG">
-							</a>
-						</div>
-
-						<div class="p-t-15"> 
-							<p class="stext-108 cl6">
-								Nos produits ne sont pas simplement cosmétiques ou médicinaux; ils sont conçus pour 
-								harmoniser votre bien-être global. Que ce soit pour soulager le stress, revitaliser votre énergie ou purifier votre corps, 
-								Naturveda offre une approche intégrée pour une vie saine et équilibrée.
-								<a href="product.html">En savoir plus</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-			<section style="display: none !important;">
-				<div class="image-containerw">
-					<img src="images/Shilajits.webp" alt="">
-					</div>
-					<div class="image-containerw">
-						<img src="images/ashwagan.webp" alt="">
-					</div>
-			</section>
-		<style>
-		/* S'assure que l'image est centrée à l'écran */
-		.image-containerw {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh; /* Hauteur égale à celle de la fenêtre */
-		}
-
-		/* Rendre l'image responsive */
-		.image-containerw img {
-		max-width: 100%; /* Adapte l'image à la largeur de l'écran */
-		height: auto; /* Maintient le ratio de l'image */
-		}
-
-		</style>
-		<section class="we-offer-area text-center bg-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="site-heading text-center">
-							<h2>Nos <span>Services</span></h2>
-							<h4 style="color: white !important;">Services proposés par Naturveda</h4>
-						</div>
-					</div>
-				</div>
-					<div class="row our-offer-items less-carousel">
-						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height flip-left" data-aos="flip-down">
-							<div class="item">
-								<img src="images/shilajit-2.jpg" alt="" style="width: 200px; height: 27vh; margin-bottom: 10px;">
-								<h4>Sélection Personnalisée de Produits</h4>
-								<p>Naturveda recommande les produits les mieux adaptés à vos besoins, qu'il s'agisse de booster votre énergie, d'améliorer votre sommeil ou de réduire votre niveau de stress.</p>
-							</div>
-						</div>
-						<!-- End Single Item -->
-						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height flip-down" data-aos="slide-up">
-							<div class="item">
-								<img src="images/portfolio-4.jpg" alt="" style="width: 200px; height: 25vh; margin-bottom: 10px;">
-								<!--<i class="fas fa-dharmachakra"></i>-->
-								<h4>Fournitures des produits naturels</h4>
-								<p>
-									Nous nous engageons à fournir des produits naturels de la plus haute qualité tout en contribuant à un avenir plus vert et plus durable pour tous.
-								</p>
-							</div>
-						</div>
-						<!-- End Single Item -->
-	
-						<!-- Single Item -->
-						<div class="col-md-4 col-sm-6 equal-height zoom-in" data-aos="fade-left">
-							<div class="item">
-								<img src="images/shit.jpg" alt="" style="width: 200px; height: 25vh; margin-bottom: 10px;">
-								<!--<i class="fas fa-tasks"></i>-->
-								<h4>Initiatives Écologiques</h4>
-								<p>
-									Natuveda est engagé dans une démarche écologique en utilisant des emballages recyclables et en plantant un arbre pour chaque commande passée.
-								</p>
-							</div>
-						</div>
-						<!-- End Single Item -->
-
-						
-					</div>
-			</div>
-		</section>	
-
-	<!-- Footer -->
-	<footer class="bg3 p-t-75 p-b-32" style="background-color: #273c47;">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-lg-3 p-b-50">
-					<h4 class="stext-301 cl0 p-b-30">
-						Logo
-					</h4>
-					<ul>
-						
-						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								<img src="images/mylogo.png" alt="" style="width: 40vh; height: 29vh;">
-							</a>
-						</li>
-
-						
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-lg-3 p-b-50">
-					<h4 class="stext-301 cl0 p-b-30">
-						Les liens utils
-					</h4>
-
-					<ul>
-						<li class="p-b-10">
-							<a href="index.html" class="stext-107 cl7 hov-cl1 trans-04">
-								Accueil
-
-							</a>
-						</li>
-
-						<li class="p-b-10">
-							<a href="product.html" class="stext-107 cl7 hov-cl1 trans-04">
-								Les produits
-							</a>
-						</li>
-
-						<li class="p-b-10">
-							<a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">
-								À propos
-
-							</a>
-						</li>
-						<!----
-						<li class="p-b-10">
-							<a href="faq.html" class="stext-107 cl7 hov-cl1 trans-04">
-								F.A.Q
-
-							</a>
-						</li>
-
-						<li class="p-b-10">
-							<a href="politique.html" class="stext-107 cl7 hov-cl1 trans-04 cacheIdClass">
-								Politique
-
-							</a>
-						</li>
-					-->
-						<li class="p-b-10">
-							<a href="contact.html" class="stext-107 cl7 hov-cl1 trans-04">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 p-b-50">
-					<h4 class="stext-301 cl0 p-b-30">
-						ENTREZ EN CONTACT
-					</h4>
-					<p class="stext-107 cl7 size-201">
-						Chez Natuveda, nous croyons que la santé et le bien-être commencent par une connexion profonde avec la nature. 
-						Nous nous engageons à fournir des produits naturels de la plus haute qualité tout en contribuant à un avenir plus 
-						vert et plus durable pour tous. Notre mission est de vous aider  
-						à atteindre un état de bien-être optimal grâce à des solutions naturelles et holistiques.
-					</p>
-
-					<div class="p-t-27">
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-							<i class="fa fa-facebook"></i>
-						</a>
-
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-							<i class="fa fa-instagram"></i>
-						</a>
-
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-							<i class="fa fa-whatsapp"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-lg-3 p-b-50">
-					<h4 class="stext-301 cl0 p-b-30">
-						Newsletter
-					</h4>
-					<p class="stext-107 cl7 size-201">
-					Rejoignez Natuveda, où l'apprentissage rencontre l'avenir !
-					Nous vous remercions pour votre confiance.
-					</p>
-					<form>
-						<div class="wrap-input1 w-full p-b-4">
-							<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
-							<div class="focus-input1 trans-04"></div>
-						</div>
-
-						<div class="p-t-18">
-							<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-								Subscribe
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="p-t-40">
-				<div class="flex-c-m flex-w p-b-18">
-					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-01.png" alt="ICON-PAY">
-					</a>
-
-					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
-					</a>
-
-					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
-					</a>
-
-					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
-					</a>
-
-					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
-					</a>
-				</div>
-
-				<p class="stext-107 cl6 txt-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Natuveda</a> &amp; distributed by <a href="" target="_blank">Natuveda</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-				</p>
-			</div>
-		</div>
-	</footer>
-
-
-	<!-- Back to top -->
-	<div class="btn-back-to-top" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<i class="zmdi zmdi-chevron-up"></i>
-		</span>
-	</div>
-
-	<!-- Modal1 -->
-	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
-		<div class="overlay-modal1 js-hide-modal1"></div>
-
-		<div class="container">
-			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
-				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
-					<img src="images/icons/icon-close.png" alt="CLOSE">
-				</button>
-
-				<div class="row">
-					<div class="col-md-6 col-lg-7 p-b-30">
-						<div class="p-l-25 p-r-30 p-lr-0-lg">
-							<div class="wrap-slick3 flex-sb flex-w">
-								<div class="wrap-slick3-dots"></div>
-								<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
-
-								<div class="slick3 gallery-lb">
-									<div class="item-slick3" data-thumb="images/product-detail-01.jpg">
-										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
-
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
-												<i class="fa fa-expand"></i>
-											</a>
-										</div>
-									</div>
-
-									<div class="item-slick3" data-thumb="images/product-detail-02.jpg">
-										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
-
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
-												<i class="fa fa-expand"></i>
-											</a>
-										</div>
-									</div>
-
-									<div class="item-slick3" data-thumb="images/product-detail-03.jpg">
-										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
-
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
-												<i class="fa fa-expand"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-5 p-b-30">
-						<div class="p-r-50 p-t-5 p-lr-0-lg">
-							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-								Lightweight Jacket
-							</h4>
-
-							<span class="mtext-106 cl2">
-								$58.79
-							</span>
-
-							<p class="stext-102 cl3 p-t-23">
-								Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
-							</p>
-							
-							<!--  -->
-							<div class="p-t-33">
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-203 flex-c-m respon6">
-										Size
-									</div>
-
-									<div class="size-204 respon6-next">
-										<div class="rs1-select2 bor8 bg0">
-											<select class="js-select2" name="time">
-												<option>Choose an option</option>
-												<option>Size S</option>
-												<option>Size M</option>
-												<option>Size L</option>
-												<option>Size XL</option>
-											</select>
-											<div class="dropDownSelect2"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-203 flex-c-m respon6">
-										Color
-									</div>
-
-									<div class="size-204 respon6-next">
-										<div class="rs1-select2 bor8 bg0">
-											<select class="js-select2" name="time">
-												<option>Choose an option</option>
-												<option>Red</option>
-												<option>Blue</option>
-												<option>White</option>
-												<option>Grey</option>
-											</select>
-											<div class="dropDownSelect2"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-204 flex-w flex-m respon6-next">
-										<div class="wrap-num-product flex-w m-r-20 m-tb-10">
-											<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-												<i class="fs-16 zmdi zmdi-minus"></i>
-											</div>
-
-											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1">
-
-											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-												<i class="fs-16 zmdi zmdi-plus"></i>
-											</div>
-										</div>
-
-										<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-											Add to cart
-										</button>
-									</div>
-								</div>	
-							</div>
-
-							<!--  -->
-							<div class="flex-w flex-m p-l-100 p-t-40 respon7">
-								<div class="flex-m bor9 p-r-10 m-r-11">
-									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Add to Wishlist">
-										<i class="zmdi zmdi-favorite"></i>
-									</a>
-								</div>
-
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook">
-									<i class="fa fa-facebook"></i>
-								</a>
-
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
-									<i class="fa fa-twitter"></i>
-								</a>
-
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Google Plus">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <section id="sameToBody" style="display: none;">
-        <div class="multi-ripple ">
-          <div></div>
-          <div></div>
+<body style="background-color: #26292E;">
+    <div id="app">
+    <cart-side-summary :initial-cart="{&quot;sub_total&quot;:0,&quot;count&quot;:0,&quot;one_page_checkout&quot;:false,&quot;created_at&quot;:&quot;2024-08-28T22:22:20.535455Z&quot;,&quot;items&quot;:{&quot;data&quot;:[]}}"></cart-side-summary>
+    <!-- App header -->
+        <!-- Toast messages -->
+<flash></flash>
+    <!-- App content -->
+    <main class="page-wrapper">
+            <div class="page-builder">
+            <section id="PBS-50nwjd1716333261050" class="section page-section image-section PBS-50nwjd1716333261050">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/pojQnkWfInaghQRu095XgejpO6b9GEB1hMBGhUKP.png"
+             data-pb-section="PBS-50nwjd1716333261050"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/pojQnkWfInaghQRu095XgejpO6b9GEB1hMBGhUKP.png"
+        />
+      </a>
+    </div>
+  </section>
+
+
+                <section id="PBS-hn9z4p1716333283357" class="section page-section image-section PBS-hn9z4p1716333283357">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/xxC0xQrnU8AwptZ7alc0fPcabn9D3hrqqiFn3B0Q.png"
+             data-pb-section="PBS-hn9z4p1716333283357"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/xxC0xQrnU8AwptZ7alc0fPcabn9D3hrqqiFn3B0Q.png"
+        />
+      </a>
+    </div>
+  </section>
+
+    <section id="PBS-z107371716333296017" class="section page-section image-section PBS-z107371716333296017">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/MbbXfiQzivn3owliqzHOzLFlO3wBRRlx7y98MmSW.png"
+             data-pb-section="PBS-z107371716333296017"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/MbbXfiQzivn3owliqzHOzLFlO3wBRRlx7y98MmSW.png"
+        />
+      </a>
+    </div>
+  </section>
+
+
+                <section id="PBS-y7vn1716333369041" class="section page-section image-section PBS-y7vn1716333369041">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/p27lAcyVT4J8WIacPEmLsyvjwrbWjz1ev6xWgnTm.png"
+             data-pb-section="PBS-y7vn1716333369041"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/p27lAcyVT4J8WIacPEmLsyvjwrbWjz1ev6xWgnTm.png"
+        />
+      </a>
+    </div>
+  </section>
+
+
+                <section id="PBS-5tt4qm1716333383225" class="section page-section image-section PBS-5tt4qm1716333383225">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/QZTX5LHiN81fE2RBnrxuJfFR28HkEjrM0wYG20mF.png"
+             data-pb-section="PBS-5tt4qm1716333383225"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/QZTX5LHiN81fE2RBnrxuJfFR28HkEjrM0wYG20mF.png"
+        />
+      </a>
+    </div>
+  </section>
+
+
+                <section id="PBS-wc4v8n1716333396801" class="section page-section image-section PBS-wc4v8n1716333396801">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/6h7elgEqgRg2orVwxDsCqGhBvlumkwRrLJJDDoNi.png"
+             data-pb-section="PBS-wc4v8n1716333396801"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/6h7elgEqgRg2orVwxDsCqGhBvlumkwRrLJJDDoNi.png"
+        />
+      </a>
+    </div>
+  </section>
+
+
+                <section id="PBS-8r52i1716333424001" class="section page-section image-section PBS-8r52i1716333424001">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/5uc4FPuyWEjutn9hU8dnICDjoou2eRyy7AYZFMq4.png"
+             data-pb-section="PBS-8r52i1716333424001"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/5uc4FPuyWEjutn9hU8dnICDjoou2eRyy7AYZFMq4.png"
+        />
+      </a>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="form-box" id="jh"  style="border: none !important;">
+    <div class="form-value"  style="border: none !important;">
+        <form class="login-form" id="contactForm" action="javascript:submit()" 
+        >
+            <div style="opacity: 0;">sdfghjkl</div>
+            <p style="color: white;">Livraison Gratuite & Paiement à la Réception
+            </p><br>
+       <div style="display: flex; color: white !important;">
+        <h2 style="font-size: 34px;">20 000 FCFA</h2>  &nbsp;&nbsp;&nbsp;&nbsp;<p style="text-decoration: line-through; color: red;">60 000 FCFA</p>
+       </div>
+         
+        <div class="input-box">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" id="namex" name="name" required>
+            <label for="">Votre Nom et Prénoms</label> 
         </div>
-    </section> 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script>
-		$(".js-select2").each(function(){
-			$(this).select2({
-				minimumResultsForSearch: 20,
-				dropdownParent: $(this).next('.dropDownSelect2')
-			});
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/slick/slick.min.js"></script>
-	<script src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/parallax100/parallax100.js"></script>
-	<script>
-        $('.parallax100').parallax100();
-	</script>
-	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-	<script>
-		$('.gallery-lb').each(function() { // the containers for all your galleries
-			$(this).magnificPopup({
-		        delegate: 'a', // the selector for gallery item
-		        type: 'image',
-		        gallery: {
-		        	enabled:true
-		        },
-		        mainClass: 'mfp-fade'
-		    });
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/sweetalert/sweetalert.min.js"></script>
-	<script>
-		$('.js-addwish-b2').on('click', function(e){
-			e.preventDefault();
-		});
+        <div class="input-box">
+            <ion-icon name="keypad-outline"></ion-icon> 
+            <input type="number" id="quantity" name="quantity" required min="1">
+            <label for="">Le nombre de produits</label>
+        </div>
+        <div class="input-box">
+            <ion-icon name="location-outline" class="ion-iconv"></ion-icon>
+            <select  type="text" id="country" name="country" style="background-color: #2222229c; border: none !important; color: white !important;">
+                <option value="" selected>Pays de destination</option>
+                <option value="Bénin">Bénin</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Niger">Niger</option>
+                <option value="Mali">Mali</option>
+                <option value="Congo">Congo</option>
+                <option value="Cote d'ivoire">Cote d'ivoire</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <ion-icon name="home-outline"></ion-icon>
+            <input type="text" id="Quartier" name="name" required>
+            <label for="">Votre Quartier</label> 
+        </div>
+        <button id="submitButton" type="submit" style="background-color: white !important; width: 100%; border-radius: 0 !important;">Commander Maintenant</button>
+        <span id="ToAddToCardx"></span>
+        
 
-		$('.js-addwish-b2').each(function(){
-			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+        <div class="register" id="backModal" style="opacity: 0;">
+            <p > Retour</a></p>
+        </div>
+        </form> 
+         
+    </div>
+    </div>
+</section>
 
-				$(this).addClass('js-addedwish-b2');
-				$(this).off('click');
-			});
-		});
 
-		$('.js-addwish-detail').each(function(){
-			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+    <section id="PBS-3uqv31716333444940" class="section page-section image-section PBS-3uqv31716333444940">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/JuzcRiIh6JQuFQ0UXdQbFClsLn7Qt2ZH5IuGauOh.png"
+             data-pb-section="PBS-3uqv31716333444940"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/JuzcRiIh6JQuFQ0UXdQbFClsLn7Qt2ZH5IuGauOh.png"
+        />
+      </a>
+    </div>
+  </section>
 
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
 
-				$(this).addClass('js-addedwish-detail');
-				$(this).off('click');
-			});
-		});
-
-		/*---------------------------------------------*/
-
-		$('.js-addcart-detail').each(function(){
-			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
-			});
-		});
+                <section id="PBS-ov952q1716333455739" class="section page-section image-section PBS-ov952q1716333455739">
+    <div class="inner-container">
+      <a href="" class="inner-image-section" data-pb-debug="margin">
+        <img src="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/H4gfU7Mu0lsVPpyS1jpZWuyZ5nYtcNljc72S0BwU.png"
+             data-pb-section="PBS-ov952q1716333455739"
+             data-pb-field="image"
+             data-pb-type="single-image"
+             data-pb-value="https://cdn.youcan.shop/stores/cd6911470a190309b7fea1696c49cdba/others/H4gfU7Mu0lsVPpyS1jpZWuyZ5nYtcNljc72S0BwU.png"
+        />
+      </a>
+    </div>
+  </section>
+      </div>
+      </main>
+      <button type="button" class="btn btn btn-9" id="openModalxc" style="width: 100% !important; 
+      height: 10vh; background-color: blue; border-radius: 0% !important;">
+          <span class="blinkw" style="cursor: pointer; color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>  
+             Livraison gratuite et paiment à la livraison</span>
+      </button>
+      <style>
+        	.blinkw {
+	animation: blink-animationx 2.5s steps(5, start) infinite;
 	
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-	<script>
-		$('.js-pscroll').each(function(){
-			$(this).css('position','relative');
-			$(this).css('overflow','hidden');
-			var ps = new PerfectScrollbar(this, {
-				wheelSpeed: 1,
-				scrollingThreshold: 1000,
-				wheelPropagation: false,
-			});
+	}
 
-			$(window).on('resize', function(){
-				ps.update();
-			})
-		});
-		AOS.init({
-		duration: 1200,
-		})
-		function onStart(){
-			
-			const TakeTheNumBer = localStorage.getItem("takeTheNumBer");
-			if(TakeTheNumBer===null){
-			var monDivww = document.getElementById('monDivww');
-			var monDivw = document.getElementById('monDivw');
-		    //alert(TakeTheNumBer)
-			monDivww.setAttribute('data-notify', `0`);
-			monDivw.setAttribute('data-notify', `0`);
-			monDivww.addEventListener('click', function(){
-				window.location.href = "product.html?card=true"
-			})
-			monDivw.addEventListener('click', function(){
-				window.location.href = "product.html?card=true"
-			})
-			setTimeout(()=>{
-				document.getElementById('sameToBody').style.display = "none"
-			},7000)
-			}else{
-			var monDivww = document.getElementById('monDivww');
-			var monDivw = document.getElementById('monDivw');
-		    //alert(TakeTheNumBer)
-			monDivww.setAttribute('data-notify', `${TakeTheNumBer}`);
-			monDivw.setAttribute('data-notify', `${TakeTheNumBer}`);
-			monDivww.addEventListener('click', function(){
-				window.location.href = "product.html?card=true"
-			})
-			monDivw.addEventListener('click', function(){
-				window.location.href = "product.html?card=true"
-			})
-			setTimeout(()=>{
-				document.getElementById('sameToBody').style.display = "none"
-			},7000)
-			}
-			
-		}
-		onStart()
-	</script>
-		<script>
+    
+      </style>
+    <!-- App footer -->
+        <!-- Hookables -->
+      </div>
+    <script>
+  // Here we set the whole Dotshop object
+  window.Dotshop = {
+    env: "production",
+    assetsDomain: "https://static4.youcan.shop",
+    store: {"name":"shopiestu","country_code":null,"online_settings":{"analytics":null,"fb_pixel":{"ids":["977162030329546","216435090927332","5413593172076980"],"deliverability_rate":100,"conversion_type":0},"snap_pixel":{"ids":[],"deliverability_rate":100,"conversion_type":1},"tiktok_pixel":{"ids":[],"conversion_type":1,"deliverability_rate":100},"google_analytics":{"ids":[],"deliverability_rate":100,"conversion_type":1},"footer":null,"header":"<meta name=\"facebook-domain-verification\" content=\"ydq0xbab2xoi52qkmcuus5e2b9htcs\" \/>\n<!-- Meta Pixel Code -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https:\/\/connect.facebook.net\/en_US\/fbevents.js');\n  fbq('init', '1451515095586969');\n  fbq('track', 'PageView');\n<\/script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\n  src=\"https:\/\/www.facebook.com\/tr?id=1451515095586969&ev=PageView&noscript=1\"\n\/><\/noscript>\n<!-- End Meta Pixel Code -->","notifications":true},"multicurrency_settings":{"isMulticurrencyActive":true,"usePrecision":true},"domain":{"name":"shopiestu.com"},"currencyPrecision":false},
+    customer: false,
+    csrfToken: "XpMxA81uUptAJ6B5LC3BvjuSDoM5DXOVfgnsJU5R",
+    locale: "fr_FR",
+    currency: {"code":"XOF","symbol":"CFA"},
+    customerCurrency: {"name":"CFA Franc","code":"XOF","symbol":"CFA","major_value":"0.01","conversion_rate_base_usd":0.0016620000000000001,"conversion_rate_base_store_currency":1},
+    font: {"menu":{"text":"Cairo","value":"Cairo","category":"sans-serif"},"body":{"text":"Cairo","value":"Cairo","category":"sans-serif"}},
+    features: null,
+  }
+</script>
 
-			window.addEventListener('scroll', function() {
-				const fadeRightElements = document.querySelectorAll('.fade-right');
-			
-				fadeRightElements.forEach(element => {
-					const position = element.getBoundingClientRect().top;
-					const screenPosition = window.innerHeight / 1.3; // Ajuster le moment de l'animation
-			
-					if (position < screenPosition) {
-						element.classList.add('show');
-					}
-				});
-				const zoomInElements = document.querySelectorAll('.zoom-in');
-			
-				zoomInElements.forEach(element => {
-					const position = element.getBoundingClientRect().top;
-					const screenPosition = window.innerHeight / 1.3;
-			
-					if (position < screenPosition) {
-						element.classList.add('show');
-					}
-				});
-				const flipLeftElements = document.querySelectorAll('.flip-left');
-			
-				flipLeftElements.forEach(element => {
-					const position = element.getBoundingClientRect().top;
-					const screenPosition = window.innerHeight / 1.3;
-			
-					if (position < screenPosition) {
-						element.classList.add('show');
-					}
-				});
-				const flipDownElements = document.querySelectorAll('.flip-down');
-			
-			flipDownElements.forEach(element => {
-				const position = element.getBoundingClientRect().top;
-				const screenPosition = window.innerHeight / 1.3;
-			
-				if (position < screenPosition) {
-					element.classList.add('show');
-				}
-			});
-			});
-				</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
 
+<script src="https://static4.youcan.shop/api/languages-shopiestu.json?timestamp=1676911988"></script>
+
+  <script src="https://static4.youcan.shop/store-front/js/bootstrap.js?id=fa247869cfc191dbfd04dac8c057265d"></script>
+  <script src="https://static4.youcan.shop/store-front/js/app.js?id=6d039bacaeb367b2983bd40d2b3704af"></script>
+    <script>
+    window.Dotshop.font = {
+      body: {
+        value: 'Lato'
+      },
+      menu: {
+        value: 'Lato'
+      }
+    };
+
+    initFonts();
+  </script>
+  <script src="https://static4.youcan.shop/store-front/js/home/app.js?id=84e1fd5d7496beac0ad58d7c3813d011"></script>
+    <style>
+    :root {
+    font-size: 16px;
+    font-family: Lato;
+    text-align: center;
+}
+
+body{
+    color: #1a1a1a;
+}
+
+.column-child section {
+    width: 100%;
+}
+
+@media (max-width: 440px){
+    :root {
+        font-size: 12px;
+    }
+}
+
+.page-builder > section {
+    display: flex !important;
+    justify-content: center;
+}body {
+        background: #FFFFFF;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}.page-builder > section {
+    max-width: 100%;
+}.page-builder > section {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+  </style>
+<!-- Custom JavaScript code -->
+
+<script src="js/command.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
