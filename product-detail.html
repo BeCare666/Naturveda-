@@ -4,6 +4,7 @@
 	<title>Product Detail</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/mylogo.png"/>
 <!--===============================================================================================-->
@@ -36,13 +37,19 @@
 	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<link rel="stylesheet" type="text/css" href="css/command.css">
 	<link rel="stylesheet" type="text/css" href="css/commandx.css">
+	<link rel="stylesheet" type="text/css" href="css/animad.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <!--===============================================================================================-->
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+<style>
+	body section {
+    background-color: #223b49 !important; 
+}
+</style>
 </head>
 <body class="animsition">
 	
@@ -422,31 +429,58 @@
 					
 				<div class="col-md-6 col-lg-5 p-b-30">
 					<div class="p-r-50 p-t-5 p-lr-0-lg">
-						<h4 class="mtext-105 cl2 js-name-detail p-b-14" id="cardDetailx"  style="color: white !important;">
+						<h4 class="mtext-105 cl2 js-name-detail p-b-14" id="cardDetailx"  style="color: rgb(192, 188, 188) !important;">
 							 
 						</h4>
 						 
-						<span class="mtext-106 cl2" style="text-decoration: line-through; color: brown;" id="oldPrice">
+						<span class="mtext-106 cl2" style="text-decoration: line-through; color: brown; font-size: 15px;" id="oldPrice">
 							 
-						</span><br>
-
-						<span class="mtext-106 cl2" id="newPrice" style="color: white !important;">
+						</span> &nbsp;&nbsp; <span class="mtext-106 cl2" id="newPrice" style="font-size: 15px; color: rgb(192, 188, 188) !important;">
 							 
 						</span><hr>
-						<h2 style="color: white !important;">À propos de cet article: </h2>
+						<h2 style="color: rgb(192, 188, 188) !important;">À propos de cet article: </h2>
 						<p class="stext-102 cl3 p-t-23" id="descriptionProduct"> 
 						</p>
 						<ul>
 							
-							<li></li><strong class="ClassIn"><i class="fa fa-angle-right"></i></strong> <strong>Disponible :</strong> en stock</li>
-							<li></li><strong class="ClassIn"><i class="fa fa-angle-right"></i></strong> <strong>Catégorie :</strong> <span id="typeCateId">La Santé</span></li>
-							<li></li><strong class="ClassIn"><i class="fa fa-angle-right"></i></strong> <strong>Zone d'expédition :</strong> Partout dans le monde</li>
-							<li class="blink"> <strong class="ClassIn"><i class="fa fa-angle-right"></i></strong> <strong >Frais d'expédition :</strong> Gratuit</li>
+							<li></li><strong class="ClassIn"><i class="bi bi-ear-fill"></i></strong> <strong>Disponible :</strong> en stock</li>
+							<li></li><strong class="ClassIn"><i class="bi bi-ear-fill"></i></strong> <strong>Catégorie :</strong> <span id="typeCateId">La Santé</span></li>
+							<li></li><strong class="ClassIn"><i class="bi bi-ear-fill"></i></strong> <strong>Zone d'expédition :</strong> Partout dans le monde</li>
+							<li class="blink"> <strong class="ClassIn"><i class="bi bi-ear-fill"></i></strong> <strong >Frais d'expédition :</strong> Gratuit</li>
 	
-						</ul><hr>
+						</ul>
+						<section>
+							<div class="zoom-in">
+								<p style="text-align: center; color: rgb(192, 188, 188); background-color: #273c47; border: #1fd1f938 1px solid;">Nous combinons des siècles de connaissances ancestrales avec des techniques modernes pour créer des solutions holistiques qui équilibrent le corps, l'esprit et l'âme.</p><br>
+								<img src="images/5x.webp" alt="" style="width: 100%; height: 70vh;" >
+							</div>
+							
+						</section>
+						<section>
+							<p style="text-align: center; color: rgb(192, 188, 188); background-color: #273c47; border: #1fd1f938 1px solid;">Les produits Naturveda sont conçus pour être doux et adaptés à tous les types de peaux, même les plus sensibles.</p><br>
+							<img src="https://cdn.shopify.com/s/files/1/0601/2462/6986/files/giphy_4.gif?v=1712267338" alt="" style="width: 100%; height: 70vh;" class="fade-right">
+						</section>
+						<section>
+							<img src="images/2X.webp" alt="" style="width: 100%; height: 70vh;" class="flip-left">
+						</section>
+						<section>
+							<div class="flip-down">
+							<p style="text-align: center; color: rgb(192, 188, 188); background-color: #273c47; border: #1fd1f938 1px solid;">Nos produits ne sont pas simplement cosmétiques ou médicinaux; ils sont conçus pour harmoniser votre bien-être global.</p><br>
+							<img src="images/gif.gif" alt="" style="width: 100%; height: 70vh;">
+						  </div>
+						</section>
 						<div class="image-containerx" >
-							<button type="button" class="btn btn-primary btn-9" id="openModal">
-								<span class="blinkx" style="cursor: pointer;">Commandez ce produit</span>
+							<button type="button" class="btn btn btn-9" id="openModal" style="width: 100% !important; 
+							height: 10vh; background-color: blue; border-radius: 0% !important;">
+								<span class="blinkx" style="cursor: pointer;"><i class="bi bi-bag-check-fill"></i> Commandez ce produit</span>
+							</button><hr>
+							<button type="button" class="btn btn btn-9" id="openModalx" style="width: 100% !important; 
+							height: 10vh; background-color: rgb(30, 168, 30); border-radius: 0% !important;">
+								<span class="blinkx" style="cursor: pointer;">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
+										<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+									  </svg> 
+									Contactez-nous ici</span>
 							</button>
 						</div><hr>
 				<h4 style="color: white !important; font-size: 16px;">Pourquoi Acheter Cet Produits ? </h4><hr>
@@ -455,7 +489,7 @@
 				<div class="row">
                     <div class="col-12 offset-md-3" >
                         <div class="faq" id="accordion" style="background-color: #0b3147 !important; ">
-                            <div class="card">
+                            <div class="card" >
                                 <div class="card-header" id="faqHeading-1">
                                     <div class="mb-0">
                                         <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
@@ -536,8 +570,13 @@
   }
 }
 
-			.blinkx {
+	.blinkx {
 	animation: blink-animationx 0.75s steps(5, start) infinite;
+	
+	}
+
+	.blinkw {
+	animation: blink-animationx 2.5s steps(5, start) infinite;
 	
 	}
 
@@ -1224,8 +1263,30 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 			</div>
 		</div>
 	</section>
-		
-
+		<section>
+			<div id="fvgdf">
+				<img src="images/8X.webp" alt="" style="width: 100%;" id="breathing-image">
+			</div>
+		</section>
+		<style>
+			/* #breathing-image {
+			 
+			background-image: url('./../assets/img/love.svg');  ajoutez votre image de fond 
+			background-size: cover;
+			animation-name: breathing-animation;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate; 
+			}
+			@keyframes breathing-animation {
+			from {
+				transform: scale(1);
+			}
+			to {
+				transform: scale(1.1);
+			}
+			}*/
+		</style>
 	<!-- Footer -->
 	<footer class="bg3 p-t-75 p-b-32" style="background-color: #273c47">
 		<div class="container">
@@ -1236,9 +1297,9 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 					</h4>
 					<ul>
 						
-						<li class="p-b-10">
+						<li class="p-b-10" >
 							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								<img src="images/mylogo.png" alt="" style="width: 40vh; height: 29vh;">
+								<img src="images/mylogo.png" alt="" style="width: 40vh; height: 29vh;" >
 							</a>
 						</li>
 
@@ -1383,7 +1444,10 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 			<i class="zmdi zmdi-chevron-up"></i>
 		</span>
 	</div>
-
+	<button type="button" class="btn btn btn-9" id="openModalxc" style="width: 100% !important; 
+	height: 10vh; background-color: blue; border-radius: 0% !important;">
+		<span class="blinkw" style="cursor: pointer;"><i class="bi bi-info-square-fill"></i> Livraison gratuite et paiment à la livraison</span>
+	</button>
 	<!-- Modal1 -->
 	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
 		<div class="overlay-modal1 js-hide-modal1"></div>
@@ -1559,6 +1623,7 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 				dropdownParent: $(this).next('.dropDownSelect2')
 			});
 		})
+	
 	</script>
 	 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -1800,12 +1865,58 @@ window.onload = function() {
 			
 		})
 }
+
+
+	</script>
+	<script>
+
+window.addEventListener('scroll', function() {
+    const fadeRightElements = document.querySelectorAll('.fade-right');
+
+    fadeRightElements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3; // Ajuster le moment de l'animation
+
+        if (position < screenPosition) {
+            element.classList.add('show');
+        }
+    });
+	const zoomInElements = document.querySelectorAll('.zoom-in');
+
+	zoomInElements.forEach(element => {
+		const position = element.getBoundingClientRect().top;
+		const screenPosition = window.innerHeight / 1.3;
+
+		if (position < screenPosition) {
+			element.classList.add('show');
+		}
+	});
+	const flipLeftElements = document.querySelectorAll('.flip-left');
+
+	flipLeftElements.forEach(element => {
+		const position = element.getBoundingClientRect().top;
+		const screenPosition = window.innerHeight / 1.3;
+
+		if (position < screenPosition) {
+			element.classList.add('show');
+		}
+	});
+	const flipDownElements = document.querySelectorAll('.flip-down');
+
+flipDownElements.forEach(element => {
+	const position = element.getBoundingClientRect().top;
+	const screenPosition = window.innerHeight / 1.3;
+
+	if (position < screenPosition) {
+		element.classList.add('show');
+	}
+});
+});
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script> 
 	<script src="js/product-detail.js"></script>
 	<script src="js/command.js"></script>
 	<script src="https://use.fontawesome.com/1744f3f671.js"></script>
-
 </body>
 </html>

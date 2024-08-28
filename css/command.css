@@ -5,21 +5,21 @@
     --rotation-duration : .8s;
 }
 
-body section {
-    background-color: #223b49 !important; 
-}
+
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url("https://images4.alphacoders.com/936/thumb-1920-936378.jpg") no-repeat;
+   /* background: url("https://images4.alphacoders.com/936/thumb-1920-936378.jpg") no-repeat;*/
     background-position: center;
     background-size: cover;
     perspective: 1500px; 
 }
-
+*{
+    font-size: 16px !important;
+}
 
 .form *{
     padding: 0px;
@@ -92,16 +92,22 @@ body section {
 .form .input-box ion-icon{
     position: absolute;
     right: 8px;
-    top: 20px;
-    color: #fff;
+    top: 8px;
+    color: #222;
     font-size: 1.2em;
+    background-color: white;
+    padding: 2vh !important;
+    border-radius: 5px;
 }
 .form .input-box .ion-iconv{
     position: absolute;
     right: 8px;
-    top: 1px;
-    color: #fff;
+   top: -19px;
+    color: #222;
     font-size: 1.2em;
+    background-color: white;
+    padding: 2vh !important;
+    border-radius: 5px;
 } 
 .form .forget{
     margin: -15px 0 15px;
@@ -350,6 +356,15 @@ body section {
     -o-animation: testim-show .5s ease-in-out forwards;            
     animation: testim-show .5s ease-in-out forwards;            
 }
+.ClassIn i {
+    color: white !important;
+
+}
+#openModalxc{
+    position: fixed;
+    bottom: 10px;
+}
+
 
 .testim .cont div.active h2 {
     -webkit-animation: testim-content-in .4s ease-in-out forwards;    
